@@ -20,7 +20,7 @@ type = "surge-ruleset"
 [[rulesets]]
 group = "🛑 广告拦截"
 ruleset = "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
-type = "clash-domain-ruleset"
+type = "clash-domain"
 
 [[rulesets]]
 group = "🍃 应用净化"
