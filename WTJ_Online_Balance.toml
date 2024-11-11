@@ -1,5 +1,3 @@
-version = 1
-
 [ruleset]
 enabled = true
 overwrite_original_rules = true
