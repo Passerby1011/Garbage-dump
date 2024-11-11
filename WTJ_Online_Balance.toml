@@ -8,129 +8,161 @@ overwrite_original_rules = true
 add_emoji = false
 remove_old_emoji = false
 
+
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🛑 广告拦截"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🛑 广告拦截"
-ruleset = "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
+ruleset = "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
+type = "clash-domain"
 
 [[rulesets]]
 group = "🍃 应用净化"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "📢 谷歌FCM"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCNProxyIP.yaml"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCNProxyIP.yaml"
+type = "clash-classic"
 
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "Ⓜ️ 微软Bing"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Bing.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "Ⓜ️ 微软云盘"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "Ⓜ️ 微软服务"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🍎 苹果服务"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "📲 电报消息"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🤖 Claude"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/ClaudeAI.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "💬 OpenAi"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🐦 Twitter"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Twitter.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎸 Spotify"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Spotify.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎶 Tiktok"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/TikTok.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "📹 油管视频"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎥 奈飞视频"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎥 奈飞视频"
-ruleset = "clash-classic:https://raw.githubusercontent.com/dler-io/Rules/master/Clash/Provider/Media/Pornhub.yaml"
+ruleset = "https://raw.githubusercontent.com/dler-io/Rules/master/Clash/Provider/Media/Pornhub.yaml"
+type = "clash-classic"
 
 [[rulesets]]
 group = "📺 巴哈姆特"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "📺 哔哩哔哩"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "📺 哔哩哔哩"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🌏 国内媒体"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🌍 国外媒体"
@@ -139,26 +171,32 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyM
 [[rulesets]]
 group = "🚀 节点选择"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "clash-domain:https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+ruleset = "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+type = "clash-domain"
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "clash-ipcidr:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt"
+ruleset = "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt"
+type = "clash-ipcidr"
 
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list"
+type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎯 全球直连"
@@ -167,9 +205,6 @@ ruleset = "[]GEOIP,CN"
 [[rulesets]]
 group = "🐟 漏网之鱼"
 ruleset = "[]FINAL"
-
-[emojis]
-remove_old_emoji = false
 
 [[custom_groups]]
 name = "🚀 节点选择"
