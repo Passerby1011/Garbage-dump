@@ -10,10 +10,6 @@ enabled = true
 enable_rule_generator = true
 overwrite_original_rules = true
 
-[ruleset]
-enabled = true
-overwrite_original_rules = true
-
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
