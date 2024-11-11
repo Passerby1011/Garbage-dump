@@ -1,5 +1,4 @@
 version = 1
-[common]
 
 [emojis]
 remove_old_emoji = false
