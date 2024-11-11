@@ -1,4 +1,4 @@
-[common]
+version = 1
 
 [ruleset]
 enabled = true
