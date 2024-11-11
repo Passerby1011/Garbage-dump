@@ -1,13 +1,15 @@
 version = 1
 [common]
-enable_rule_generator = true
-overwrite_original_rules = true
+
+[emojis]
 remove_old_emoji = false
 add_emoji = false
 
 
 [ruleset]
 enabled = true
+enable_rule_generator = true
+overwrite_original_rules = true
 
 [ruleset]
 enabled = true
