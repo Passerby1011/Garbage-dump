@@ -1,15 +1,8 @@
 version = 1
-[common]
-default_url = []
 
 [ruleset]
 enabled = true
 overwrite_original_rules = true
-
-[emojis]
-add_emoji = false
-remove_old_emoji = false
-
 
 [[rulesets]]
 group = "🎯 全球直连"
@@ -207,6 +200,11 @@ ruleset = "[]GEOIP,CN"
 [[rulesets]]
 group = "🐟 漏网之鱼"
 ruleset = "[]FINAL"
+
+
+[emojis]
+add_emoji = false
+remove_old_emoji = false
 
 [[custom_groups]]
 name = "🚀 节点选择"
