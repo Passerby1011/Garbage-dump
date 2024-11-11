@@ -1,5 +1,6 @@
 version = 1
 [common]
+default_url = []
 
 [ruleset]
 enabled = true
