@@ -1,5 +1,12 @@
 [
   {
+    "model": "glm-4v-flash",
+    "type": "tokens",
+    "channel_type": 16,
+    "input": 0,
+    "output": 0
+  },
+  {
     "model": "moonshot-v1-128k-vision-preview",
     "type": "tokens",
     "channel_type": 29,
