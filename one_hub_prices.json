@@ -1,5 +1,75 @@
 [
   {
+    "model": "Doubao-1.5-pro-32k",
+    "type": "tokens",
+    "channel_type": 1001,
+    "input": 0.0571432,
+    "output": 0.142858
+  },
+  {
+    "model": "Doubao-1.5-pro-256k",
+    "type": "tokens",
+    "channel_type": 1001,
+    "input": 0.357145,
+    "output": 0.642861
+  },
+  {
+    "model": "Doubao-1.5-lite-32k",
+    "type": "tokens",
+    "channel_type": 1001,
+    "input": 0.0214287,
+    "output": 0.0428574
+  },
+  {
+    "model": "Doubao-lite-4k",
+    "type": "tokens",
+    "channel_type": 1001,
+    "input": 0.0214287,
+    "output": 0.0428574
+  },
+  {
+    "model": "Doubao-lite-32k",
+    "type": "tokens",
+    "channel_type": 1001,
+    "input": 0.0214287,
+    "output": 0.0428574
+  },
+  {
+    "model": "Doubao-lite-128k",
+    "type": "tokens",
+    "channel_type": 1001,
+    "input": 0.0571432,
+    "output": 0.071429
+  },
+  {
+    "model": "Doubao-pro-4k",
+    "type": "tokens",
+    "channel_type": 1001,
+    "input": 0.0571432,
+    "output": 0.142858
+  },
+  {
+    "model": "Doubao-pro-32k",
+    "type": "tokens",
+    "channel_type": 1001,
+    "input": 0.0571432,
+    "output": 0.142858
+  },
+  {
+    "model": "Doubao-pro-128k",
+    "type": "tokens",
+    "channel_type": 1001,
+    "input": 0.357145,
+    "output": 0.642861
+  },
+  {
+    "model": "Doubao-pro-256k",
+    "type": "tokens",
+    "channel_type": 1001,
+    "input": 0.357145,
+    "output": 0.642861
+  },
+  {
     "model": "gemini-2.0-flash",
     "type": "tokens",
     "channel_type": 25,
