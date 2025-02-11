@@ -1,5 +1,89 @@
 [
   {
+    "model": "step-1-8k",
+    "type": "tokens",
+    "channel_type": 1002,
+    "input": 0.357145,
+    "output": 1.42858
+  },
+  {
+    "model": "step-1-32k",
+    "type": "tokens",
+    "channel_type": 1002,
+    "input": 1.071435,
+    "output": 5.00003
+  },
+  {
+    "model": "step-1-128k",
+    "type": "tokens",
+    "channel_type": 1002,
+    "input": 2.85716,
+    "output": 14.2858
+  },
+  {
+    "model": "step-1-256k",
+    "type": "tokens",
+    "channel_type": 1002,
+    "input": 6.785755,
+    "output": 21.4287
+  },
+  {
+    "model": "step-1-flash",
+    "type": "tokens",
+    "channel_type": 1002,
+    "input": 0.071429,
+    "output": 0.285716
+  },
+  {
+    "model": "step-2-16k",
+    "type": "tokens",
+    "channel_type": 1002,
+    "input": 2.714302,
+    "output": 8.57148
+  },
+  {
+    "model": "step-2-mini",
+    "type": "tokens",
+    "channel_type": 1002,
+    "input": 0.071429,
+    "output": 0.142858
+  },
+  {
+    "model": "step-2-16k-exp",
+    "type": "tokens",
+    "channel_type": 1002,
+    "input": 2.714302,
+    "output": 8.57148
+  },
+  {
+    "model": "step-1v-8k",
+    "type": "tokens",
+    "channel_type": 1002,
+    "input": 0.357145,
+    "output": 1.42858
+  },
+  {
+    "model": "step-1v-32k",
+    "type": "tokens",
+    "channel_type": 1002,
+    "input": 1.071435,
+    "output": 5.00003
+  },
+  {
+    "model": "step-lo-vision-32k",
+    "type": "tokens",
+    "channel_type": 1002,
+    "input": 1.071435,
+    "output": 5.00003
+  },
+  {
+    "model": "step-1.5v-mini",
+    "type": "tokens",
+    "channel_type": 1002,
+    "input": 0.571432,
+    "output": 2.500015
+  },
+  {
     "model": "glm-4v-flash",
     "type": "tokens",
     "channel_type": 16,
