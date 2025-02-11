@@ -3,8 +3,22 @@
     "model": "Doubao-1.5-vision-pro-32k",
     "type": "tokens",
     "channel_type": 1001,
-    "input": 0.0571432,
-    "output": 0.142858
+    "input": 0.214287,
+    "output": 0.642861
+  },
+  {
+    "model": "Doubao-vision-lite-32k",
+    "type": "tokens",
+    "channel_type": 1001,
+    "input": 0.1071435,
+    "output": 0.3214305
+  },
+  {
+    "model": "Doubao-vision-pro-32k",
+    "type": "tokens",
+    "channel_type": 1001,
+    "input": 0.214287,
+    "output": 0.642861
   },
   {
     "model": "Doubao-pro-32k-browsing",
