@@ -1,5 +1,26 @@
 [
   {
+    "model": "moonshot-v1-128k-vision-preview",
+    "type": "tokens",
+    "channel_type": 29,
+    "input": 4.2857,
+    "output": 4.2857
+  },
+  {
+    "model": "moonshot-v1-32k-vision-preview",
+    "type": "tokens",
+    "channel_type": 29,
+    "input": 1.7143,
+    "output": 1.7143
+  },
+  {
+    "model": "moonshot-v1-8k-vision-preview",
+    "type": "tokens",
+    "channel_type": 29,
+    "input": 0.8572,
+    "output": 0.8572
+  },
+  {
     "model": "Meta-Llama-3.1-8B-Instruct",
     "type": "tokens",
     "channel_type": 45,
