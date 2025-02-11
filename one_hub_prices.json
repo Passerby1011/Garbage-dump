@@ -1,5 +1,33 @@
 [
   {
+    "model": "kimi",
+    "type": "tokens",
+    "channel_type": 29,
+    "input": 4.2857,
+    "output": 4.2857
+  },
+  {
+    "model": "kimi-math",
+    "type": "tokens",
+    "channel_type": 29,
+    "input": 4.2857,
+    "output": 4.2857
+  },
+  {
+    "model": "kimi-research",
+    "type": "tokens",
+    "channel_type": 29,
+    "input": 4.2857,
+    "output": 4.2857
+  },
+  {
+    "model": "kimi-search",
+    "type": "tokens",
+    "channel_type": 29,
+    "input": 4.2857,
+    "output": 4.2857
+  },
+  {
     "model": "glm-4-flashx",
     "type": "tokens",
     "channel_type": 16,
