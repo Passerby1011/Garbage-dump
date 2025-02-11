@@ -2196,5 +2196,131 @@
       "channel_type": 45,
       "input": 0.0,
       "output": 0.0
-    }
+    },
+   {
+    "model": "deepseek-claude-3-5-sonnet-20241022",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+  {
+    "model": "deepseek-Doubao-1.5-pro-32k",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+  {
+    "model": "deepseek-gemini-2.0-flash",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+  {
+    "model": "deepseek-gemini-2.0-flash-exp",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+  {
+    "model": "deepseek-gemini-2.0-flash-lite-preview-02-05",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+  {
+    "model": "deepseek-gemini-2.0-flash-thinking-exp-01-21",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+  {
+    "model": "deepseek-gemini-2.0-pro-exp-02-05",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+  {
+    "model": "deepseek-gemini-exp-1206",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+  {
+    "model": "deepseek-gpt-4o",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+  {
+    "model": "deepseek-qwen-max",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+  {
+    "model": "deepseek-r1",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+  {
+    "model": "deepseek-r1-search",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+  {
+    "model": "DeepSeek-R1",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+  {
+    "model": "deepseek-think",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+    {
+    "model": "deepseek-think-fold",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+    {
+    "model": "deepseek-think-silent",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.071429,
+    "output": 1.142864
+  },
+  {
+    "model": "deepseek-search",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.0714,
+    "output": 0.1429
+  },
+  {
+    "model": "DeepSeek-V3",
+    "type": "tokens",
+    "channel_type": 28,
+    "input": 0.0714,
+    "output": 0.1429
+  }
 ]
