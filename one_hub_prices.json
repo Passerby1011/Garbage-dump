@@ -1,5 +1,19 @@
 [
   {
+    "model": "qwen2.5-7b-instruct-1m",
+    "type": "tokens",
+    "channel_type": 17,
+    "input": 0.0357145,
+    "output": 0.071429
+  },
+  {
+    "model": "qwen2.5-14b-instruct-1m",
+    "type": "tokens",
+    "channel_type": 17,
+    "input": 0.071429,
+    "output": 0.214287
+  },
+  {
     "model": "kimi",
     "type": "tokens",
     "channel_type": 29,
