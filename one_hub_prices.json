@@ -1,5 +1,33 @@
 [
   {
+    "model": "Meta-Llama-3.1-8B-Instruct",
+    "type": "tokens",
+    "channel_type": 45,
+    "input": 0.0,
+    "output": 0.0
+  },
+  {
+    "model": "Meta-Llama-3.1-8B-Instruct-Pro",
+    "type": "tokens",
+    "channel_type": 45,
+    "input": 0.029999999999999995,
+    "output": 0.029999999999999995
+  },
+  {
+    "model": "Meta-Llama-3.1-405B-Instruct",
+    "type": "tokens",
+    "channel_type": 45,
+    "input": 1.5,
+    "output": 1.5
+  },
+  {
+    "model": "Meta-Llama-3.3-70B-Instruct",
+    "type": "tokens",
+    "channel_type": 45,
+    "input": 0.295,
+    "output": 0.295
+  },
+  {
     "model": "babbage-002",
     "type": "tokens",
     "channel_type": 1,
