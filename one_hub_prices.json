@@ -1,5 +1,19 @@
 [
   {
+    "model": "Doubao-embedding",
+    "type": "tokens",
+    "channel_type": 1001,
+    "input": 0.0357145,
+    "output": 0
+  },
+  {
+    "model": "Doubao-embedding-large",
+    "type": "tokens",
+    "channel_type": 1001,
+    "input": 0.0500003,
+    "output": 0
+  },
+  {
     "model": "Doubao-1.5-vision-pro-32k",
     "type": "tokens",
     "channel_type": 1001,
