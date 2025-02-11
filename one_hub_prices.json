@@ -1,5 +1,54 @@
 [
   {
+    "model": "glm-4-flashx",
+    "type": "tokens",
+    "channel_type": 16,
+    "input": 0.0071429,
+    "output": 0.0071429
+  },
+  {
+    "model": "glm-4v-plus",
+    "type": "tokens",
+    "channel_type": 16,
+    "input": 0.285716,
+    "output": 0.285716
+  },
+  {
+    "model": "glm-zero-preview",
+    "type": "tokens",
+    "channel_type": 16,
+    "input": 0.71429,
+    "output": 0.71429
+  },
+  {
+    "model": "grok-2-1212",
+    "type": "tokens",
+    "channel_type": 1003,
+    "input": 1,
+    "output": 5
+  },
+  {
+    "model": "grok-beta",
+    "type": "tokens",
+    "channel_type": 1003,
+    "input": 2.5,
+    "output": 7.5
+  },
+  {
+    "model": "grok-vision-beta",
+    "type": "tokens",
+    "channel_type": 1003,
+    "input": 2.5,
+    "output": 7.5
+  },
+  {
+    "model": "grok-2-vision-1212",
+    "type": "tokens",
+    "channel_type": 1003,
+    "input": 1,
+    "output": 5
+  },
+  {
     "model": "Doubao-embedding",
     "type": "tokens",
     "channel_type": 1001,
