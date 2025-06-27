@@ -1,3 +1,8 @@
+version = 1
+[common]
+# API mode, set to true to prevent loading local subscriptions or serving local files directly
+api_mode = false
+
 # 不要随意改变关键字，否则会导致出错
 # acl4SSR规则
 
@@ -7,10 +12,16 @@
 # 苹果分流：支持
 # 增强中国IP段：支持
 # 增强国外GFW：支持
-
-enable_rule_generator = true
-overwrite_original_rules = true
+[emojis]
 remove_old_emoji = false
+
+[ruleset]
+# Enable generating rules with rulesets
+enabled = true
+# Overwrite the existing rules in rule_base
+overwrite_original_rules = false
+# Perform a ruleset update on request
+update_ruleset_on_request = false
 
 # clash_rule_base="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GeneralClashConfig.yml"
 
