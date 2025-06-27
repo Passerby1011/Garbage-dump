@@ -1,169 +1,161 @@
-version = 1
+# 不要随意改变关键字，否则会导致出错
+# acl4SSR规则
 
-[emojis]
-remove_old_emoji = false
-add_emoji = false
+# 去广告：支持
+# 自动测速：支持
+# 微软分流：支持
+# 苹果分流：支持
+# 增强中国IP段：支持
+# 增强国外GFW：支持
 
-
-[ruleset]
-enabled = true
 enable_rule_generator = true
 overwrite_original_rules = true
+remove_old_emoji = false
 
+# clash_rule_base="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GeneralClashConfig.yml"
+
+# luck
+
+# 设置规则标志位
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🛑 广告拦截"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🛑 广告拦截"
-ruleset = "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
-type = "clash-domain"
+ruleset = "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
 
 [[rulesets]]
 group = "🍃 应用净化"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "📢 谷歌FCM"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCNProxyIP.yaml"
-type = "clash-classic"
+ruleset = "clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCNProxyIP.yaml"
 
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "Ⓜ️ 微软Bing"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Bing.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "Ⓜ️ 微软云盘"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "Ⓜ️ 微软服务"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🍎 苹果服务"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "📲 电报消息"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🤖 Claude"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/ClaudeAI.list"
-type = "surge-ruleset"
+
+[[rulesets]]
+group = "🤖 Claude"
+ruleset = "[]GEOSITE,anthropic"
+
+[[rulesets]]
+group = "✨ Gemini"
+ruleset = "https://raw.githubusercontent.com/Passerby1011/Garbage-dump/refs/heads/main/Gemini.list"
 
 [[rulesets]]
 group = "💬 OpenAi"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list"
-type = "surge-ruleset"
+
+[[rulesets]]
+group = "🎮 游戏平台"
+ruleset = "[]GEOSITE,steam"
+
+[[rulesets]]
+group = "🎮 游戏平台"
+ruleset = "[]GEOSITE,category-games"
 
 [[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🐦 Twitter"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Twitter.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎸 Spotify"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Spotify.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎶 Tiktok"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/TikTok.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "📹 油管视频"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎥 奈飞视频"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list"
-type = "surge-ruleset"
 
 [[rulesets]]
-group = "🎥 奈飞视频"
-ruleset = "https://raw.githubusercontent.com/dler-io/Rules/master/Clash/Provider/Media/Pornhub.yaml"
-type = "clash-classic"
+group = "🔞 魅力艺术"
+ruleset = "https://raw.githubusercontent.com/Passerby1011/Garbage-dump/refs/heads/main/PH.list"
 
 [[rulesets]]
 group = "📺 巴哈姆特"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "📺 哔哩哔哩"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "📺 哔哩哔哩"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🌏 国内媒体"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🌍 国外媒体"
@@ -171,56 +163,67 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyM
 
 [[rulesets]]
 group = "🚀 节点选择"
+ruleset = "[]GEOSITE,gfw"
+
+[[rulesets]]
+group = "🚀 节点选择"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
-type = "clash-domain"
+ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.list,28800"
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt"
-type = "clash-ipcidr"
+ruleset = "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/rule/IPTVMainland_Domain.list,28800"
+
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "clash-domain:https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
 
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
-type = "surge-ruleset"
-
-[[rulesets]]
-group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list"
-type = "surge-ruleset"
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "[]GEOIP,CN"
+ruleset = "[]GEOSITE,cn"
+
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "clash-ipcidr:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt,no-resolve"
+
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list,no-resolve"
+
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "[]GEOIP,CN,no-resolve"
 
 [[rulesets]]
 group = "🐟 漏网之鱼"
 ruleset = "[]FINAL"
 
+# 设置分组标志位
 [[custom_groups]]
 name = "🚀 节点选择"
 type = "select"
-rule = ["[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡", "[]DIRECT"]
+rule = [ "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🛖 家宽节点-自动", "[]🛖 家宽节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡", "[]DIRECT",]
 
 [[custom_groups]]
 name = "🚀 手动切换"
 type = "select"
-rule = [".*"]
+rule = [ ".*",]
 
 [[custom_groups]]
 name = "♻️ 自动选择"
 type = "url-test"
-rule = ["(港|HK|hk|Hong Kong|HongKong|hongkong|🇭🇰|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America|🇺🇸|台|新北|彰化|TW|Taiwan|🇹🇼|新加坡|坡|狮城|SG|Singapore|🇸🇬|KR|Korea|KOR|首尔|韩|韓|🇰🇷)"]
+rule = [ "(港|HK|hk|Hong Kong|HongKong|hongkong|🇭🇰|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America|🇺🇸|台|新北|彰化|TW|Taiwan|🇹🇼|新加坡|坡|狮城|SG|Singapore|🇸🇬|KR|Korea|KOR|首尔|韩|韓|🇰🇷)",]
 url = "http://www.gstatic.com/generate_204"
 interval = 300
 tolerance = 50
@@ -228,117 +231,127 @@ tolerance = 50
 [[custom_groups]]
 name = "📲 电报消息"
 type = "select"
-rule = ["[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡"]
+rule = [ "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡",]
 
 [[custom_groups]]
 name = "💬 OpenAi"
 type = "select"
-rule = ["[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡"]
+rule = [ "[]🚀 节点选择", "[]♻️ 自动选择", "[]🛖 家宽节点-自动", "[]🛖 家宽节点-手动", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡",]
 
 [[custom_groups]]
 name = "🤖 Claude"
 type = "select"
-rule = ["[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡"]
+rule = [ "[]🚀 节点选择", "[]♻️ 自动选择", "[]🛖 家宽节点-自动", "[]🛖 家宽节点-手动", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡",]
+
+[[custom_groups]]
+name = "✨ Gemini"
+type = "select"
+rule = [ "[]🚀 节点选择", "[]♻️ 自动选择", "[]🛖 家宽节点-自动", "[]🛖 家宽节点-手动", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡",]
 
 [[custom_groups]]
 name = "📹 油管视频"
 type = "select"
-rule = ["[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡", "[]DIRECT"]
+rule = [ "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡", "[]DIRECT",]
 
 [[custom_groups]]
 name = "Ⓜ️ 微软Bing"
 type = "select"
-rule = ["[]DIRECT", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡"]
+rule = [ "[]DIRECT", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡",]
 
 [[custom_groups]]
 name = "Ⓜ️ 微软云盘"
 type = "select"
-rule = ["[]DIRECT", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[] 🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡"]
+rule = [ "[]DIRECT", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡",]
 
 [[custom_groups]]
 name = "Ⓜ️ 微软服务"
 type = "select"
-rule = ["[]DIRECT", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡"]
+rule = [ "[]DIRECT", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡",]
 
 [[custom_groups]]
 name = "🎮 游戏平台"
 type = "select"
-rule = ["[]DIRECT", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡"]
+rule = [ "[]DIRECT", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡",]
 
 [[custom_groups]]
 name = "🐦 Twitter"
 type = "select"
-rule = ["[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]DIRECT", "[]💦负载均衡"]
+rule = [ "[]🚀 节点选择", "[]♻️ 自动选择", "[]🛖 家宽节点-自动", "[]🛖 家宽节点-手动", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]DIRECT", "[]💦负载均衡",]
 
 [[custom_groups]]
 name = "🎸 Spotify"
 type = "select"
-rule = ["[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]DIRECT", "[]💦负载均衡"]
+rule = [ "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]DIRECT", "[]💦负载均衡",]
 
 [[custom_groups]]
 name = "🎶 Tiktok"
 type = "select"
-rule = ["[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]DIRECT", "[]💦负载均衡"]
+rule = [ "[]🚀 节点选择", "[]♻️ 自动选择", "[]🛖 家宽节点-自动", "[]🛖 家宽节点-手动", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]DIRECT", "[]💦负载均衡",]
 
 [[custom_groups]]
 name = "🍎 苹果服务"
 type = "select"
-rule = ["[]DIRECT", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡"]
+rule = [ "[]DIRECT", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡",]
 
 [[custom_groups]]
 name = "🎥 奈飞视频"
 type = "select"
-rule = ["[]🎥 奈飞节点", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡", "[]DIRECT"]
+rule = [ "[]🎥 奈飞节点", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡", "[]DIRECT",]
 
 [[custom_groups]]
 name = "📺 巴哈姆特"
 type = "select"
-rule = ["[]🇨🇳 台湾节点-自动", "[]🇨🇳 台湾节点-手动", "[]🚀 节点选择", "[]🚀 手动切换", "[]DIRECT"]
+rule = [ "[]🇨🇳 台湾节点-自动", "[]🇨🇳 台湾节点-手动", "[]🚀 节点选择", "[]🚀 手动切换", "[]DIRECT",]
+
+[[custom_groups]]
+name = "🔞 魅力艺术"
+type = "select"
+rule = [ "[]🚀 节点选择", "[]🚀 手动切换", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡", "[]DIRECT",]
 
 [[custom_groups]]
 name = "📺 哔哩哔哩"
 type = "select"
-rule = ["[]🎯 全球直连", "[]🇨🇳 台湾节点-自动", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-手动", "[]🇭🇰 香港节点-手动"]
+rule = [ "[]🎯 全球直连", "[]🇨🇳 台湾节点-自动", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-手动", "[]🇭🇰 香港节点-手动",]
 
 [[custom_groups]]
 name = "🌍 国外媒体"
 type = "select"
-rule = ["[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡", "[]DIRECT"]
+rule = [ "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡", "[]DIRECT",]
 
 [[custom_groups]]
 name = "🌏 国内媒体"
 type = "select"
-rule = ["[]DIRECT", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 节点选择", "[]🚀 手动切换", "[]♻️ 自动选择", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡"]
+rule = [ "[]DIRECT", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 节点选择", "[]🚀 手动切换", "[]♻️ 自动选择", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡",]
 
 [[custom_groups]]
 name = "📢 谷歌FCM"
 type = "select"
-rule = ["[]DIRECT", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡"]
+rule = [ "[]DIRECT", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡",]
 
 [[custom_groups]]
 name = "🎯 全球直连"
 type = "select"
-rule = ["[]DIRECT", "[]🚀 节点选择", "[]♻️ 自动选择"]
+rule = [ "[]DIRECT", "[]🚀 节点选择", "[]♻️ 自动选择",]
 
 [[custom_groups]]
 name = "🛑 广告拦截"
 type = "select"
-rule = ["[]REJECT", "[]DIRECT"]
+rule = [ "[]REJECT", "[]DIRECT",]
 
 [[custom_groups]]
 name = "🍃 应用净化"
 type = "select"
-rule = ["[]REJECT", "[]DIRECT"]
+rule = [ "[]REJECT", "[]DIRECT",]
 
 [[custom_groups]]
 name = "🐟 漏网之鱼"
 type = "select"
-rule = ["[]🚀 节点选择", "[]♻️ 自动选择", "[]DIRECT", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡"]
+rule = [ "[]🚀 节点选择", "[]♻️ 自动选择", "[]DIRECT", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡",]
 
 [[custom_groups]]
 name = "🇭🇰 香港节点-自动"
 type = "url-test"
-rule = ["(港|HK|hk|Hong Kong|HongKong|hongkong|🇭🇰)"]
+rule = [ "(港|HK|hk|Hong Kong|HongKong|hongkong|🇭🇰)",]
 url = "http://www.gstatic.com/generate_204"
 interval = 300
 tolerance = 50
@@ -346,7 +359,7 @@ tolerance = 50
 [[custom_groups]]
 name = "🇯🇵 日本节点-自动"
 type = "url-test"
-rule = ["(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵)"]
+rule = [ "(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵)",]
 url = "http://www.gstatic.com/generate_204"
 interval = 300
 tolerance = 50
@@ -354,7 +367,7 @@ tolerance = 50
 [[custom_groups]]
 name = "🇺🇲 美国节点-自动"
 type = "url-test"
-rule = ["(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America|🇺🇸)"]
+rule = [ "(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America|🇺🇸)",]
 url = "http://www.gstatic.com/generate_204"
 interval = 300
 tolerance = 150
@@ -362,7 +375,7 @@ tolerance = 150
 [[custom_groups]]
 name = "🇨🇳 台湾节点-自动"
 type = "url-test"
-rule = ["(台|新北|彰化|TW|Taiwan|🇹🇼)"]
+rule = [ "(台|新北|彰化|TW|Taiwan|🇹🇼)",]
 url = "http://www.gstatic.com/generate_204"
 interval = 300
 tolerance = 50
@@ -370,7 +383,7 @@ tolerance = 50
 [[custom_groups]]
 name = "🇸🇬 狮城节点-自动"
 type = "url-test"
-rule = ["(新加坡|坡|狮城|SG|Singapore|🇸🇬)"]
+rule = [ "(新加坡|坡|狮城|SG|Singapore|🇸🇬)",]
 url = "http://www.gstatic.com/generate_204"
 interval = 300
 tolerance = 50
@@ -378,7 +391,7 @@ tolerance = 50
 [[custom_groups]]
 name = "🇰🇷 韩国节点-自动"
 type = "url-test"
-rule = ["(KR|Korea|KOR|首尔|韩|韓|🇰🇷)"]
+rule = [ "(KR|Korea|KOR|首尔|韩|韓|🇰🇷)",]
 url = "http://www.gstatic.com/generate_204"
 interval = 300
 tolerance = 50
@@ -386,58 +399,66 @@ tolerance = 50
 [[custom_groups]]
 name = "🇭🇰 香港节点-手动"
 type = "select"
-rule = ["(港|HK|hk|Hong Kong|HongKong|hongkong|🇭🇰)"]
+rule = [ "(港|HK|hk|Hong Kong|HongKong|hongkong|🇭🇰)",]
 
 [[custom_groups]]
 name = "🇯🇵 日本节点-手动"
 type = "select"
-rule = ["(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵)"]
+rule = [ "(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵)",]
 
 [[custom_groups]]
 name = "🇺🇲 美国节点-手动"
 type = "select"
-rule = ["(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America|🇺🇸)"]
+rule = [ "(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America|🇺🇸)",]
 
 [[custom_groups]]
 name = "🇨🇳 台湾节点-手动"
 type = "select"
-rule = ["(台|新北|彰化|TW|Taiwan|🇹🇼)"]
+rule = [ "(台|新北|彰化|TW|Taiwan|🇹🇼)",]
 
 [[custom_groups]]
 name = "🇸🇬 狮城节点-手动"
 type = "select"
-rule = ["(新加坡|坡|狮城|SG|Singapore|🇸🇬)"]
+rule = [ "(新加坡|坡|狮城|SG|Singapore|🇸🇬)",]
 
 [[custom_groups]]
 name = "🇰🇷 韩国节点-手动"
 type = "select"
-rule = ["(KR|Korea|KOR|首尔|韩|韓|🇰🇷)"]
-
-[[custom_groups]]
-name = "🏁 其他节点-自动"
-type = "select"
-rule = ["(^(?!.*(?:港|HK|hk|Hong Kong|HongKong|hongkong|🇭🇰|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America|🇺🇸|台|新北|彰化|TW|Taiwan|🇹🇼|新加坡|坡|狮城|SG|Singapore|🇸🇬|KR|Korea|KOR|首尔|韩|韓|🇰🇷)).*$)"]
+rule = [ "(KR|Korea|KOR|首尔|韩|韓|🇰🇷)",]
 
 [[custom_groups]]
 name = "🏁 其他节点-手动"
 type = "select"
-rule = ["(^(?!.*(?:港|HK|hk|Hong Kong|HongKong|hongkong|🇭🇰|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America|🇺🇸|台|新北|彰化|TW|Taiwan|🇹🇼|新加坡|坡|狮城|SG|Singapore|🇸🇬|KR|Korea|KOR|首尔|韩|韓|🇰🇷)).*$)"]
+rule = [ "(^(?!.*(?:港|HK|hk|Hong Kong|HongKong|hongkong|🇭🇰|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America|🇺🇸|台|新北|彰化|TW|Taiwan|🇹🇼|新加坡|坡|狮城|SG|Singapore|🇸🇬|KR|Korea|KOR|首尔|韩|韓|🇰🇷)).*$)",]
 
 [[custom_groups]]
 name = "🏳️‍🌈特殊倍率节点"
 type = "select"
-rule = ["((0\\.5|1\\.5|2|2\\.5|3|3\\.5|4|4\\.5|5|5\\.5|6|6\\.5|7|7\\.5|8|8\\.5|9)(X|x|×)|(X|x|×)(0\\.5|1\\.5|2|2\\.5|3|3\\.5|4|4\\.5|5|5\\.5|6|6\\.5|7|7\\.5|8|8\\.5|9))"]
+rule = [ "((0\\.5|1\\.5|2|2\\.5|3|3\\.5|4|4\\.5|5|5\\.5|6|6\\.5|7|7\\.5|8|8\\.5|9)(X|x|×)|(X|x|×)(0\\.5|1\\.5|2|2\\.5|3|3\\.5|4|4\\.5|5|5\\.5|6|6\\.5|7|7\\.5|8|8\\.5|9))",]
 
 [[custom_groups]]
 name = "💦负载均衡"
 type = "load-balance"
-rule = ["(港|HK|hk|Hong Kong|HongKong|hongkong|🇭🇰|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America|🇺🇸|台|新北|彰化|TW|Taiwan|🇹🇼|新加坡|坡|狮城|SG|Singapore|🇸🇬|KR|Korea|KOR|首尔|韩|韓|🇰🇷)"]
+rule = [ "(港|HK|hk|Hong Kong|HongKong|hongkong|🇭🇰|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America|🇺🇸|台|新北|彰化|TW|Taiwan|🇹🇼|新加坡|坡|狮城|SG|Singapore|🇸🇬|KR|Korea|KOR|首尔|韩|韓|🇰🇷)",]
 url = "http://www.gstatic.com/generate_204"
-strategy = "round-robin"
 interval = 300
+strategy = "round-robin"
 tolerance = 75
 
 [[custom_groups]]
 name = "🎥 奈飞节点"
 type = "select"
-rule = ["(NF|奈飞|解锁|Netflix|NETFLIX|Media)", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-自动", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡"]
+rule = [ "(NF|奈飞|解锁|Netflix|NETFLIX|Media)", "[]🚀 节点选择", "[]♻️ 自动选择", "[]🇭🇰 香港节点-自动", "[]🇨🇳 台湾节点-自动", "[]🇸🇬 狮城节点-自动", "[]🇯🇵 日本节点-自动", "[]🇺🇲 美国节点-自动", "[]🇰🇷 韩国节点-自动", "[]🇭🇰 香港节点-手动", "[]🇨🇳 台湾节点-手动", "[]🇸🇬 狮城节点-手动", "[]🇯🇵 日本节点-手动", "[]🇺🇲 美国节点-手动", "[]🇰🇷 韩国节点-手动", "[]🚀 手动切换", "[]🏁 其他节点-手动", "[]🏳️‍🌈特殊倍率节点", "[]💦负载均衡",]
+
+[[custom_groups]]
+name = "🛖 家宽节点-手动"
+type = "select"
+rule = [ "(家)",]
+
+[[custom_groups]]
+name = "🛖 家宽节点-自动"
+type = "url-test"
+rule = [ "(家)",]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+tolerance = 50
