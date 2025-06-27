@@ -21,191 +21,144 @@ remove_old_emoji = false
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
 
-[[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list"
 
-[[rulesets]]
 group = "🛑 广告拦截"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"
 
-[[rulesets]]
 group = "🛑 广告拦截"
 ruleset = "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
 
-[[rulesets]]
 group = "🍃 应用净化"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list"
 
-[[rulesets]]
 group = "📢 谷歌FCM"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list"
 
-[[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list"
 
-[[rulesets]]
 group = "🎯 全球直连"
 ruleset = "clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCNProxyIP.yaml"
 
-[[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list"
 
-[[rulesets]]
 group = "Ⓜ️ 微软Bing"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Bing.list"
 
-[[rulesets]]
 group = "Ⓜ️ 微软云盘"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list"
 
-[[rulesets]]
 group = "Ⓜ️ 微软服务"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list"
 
-[[rulesets]]
 group = "🍎 苹果服务"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list"
 
-[[rulesets]]
 group = "📲 电报消息"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list"
 
-[[rulesets]]
 group = "🤖 Claude"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/ClaudeAI.list"
 
-[[rulesets]]
 group = "🤖 Claude"
 ruleset = "[]GEOSITE,anthropic"
 
-[[rulesets]]
 group = "✨ Gemini"
 ruleset = "https://raw.githubusercontent.com/Passerby1011/Garbage-dump/refs/heads/main/Gemini.list"
 
-[[rulesets]]
 group = "💬 OpenAi"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list"
 
-[[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "[]GEOSITE,steam"
 
-[[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "[]GEOSITE,category-games"
 
-[[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list"
 
-[[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list"
 
-[[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list"
 
-[[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list"
 
-[[rulesets]]
 group = "🎮 游戏平台"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list"
 
-[[rulesets]]
 group = "🐦 Twitter"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Twitter.list"
 
-[[rulesets]]
 group = "🎸 Spotify"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Spotify.list"
 
-[[rulesets]]
 group = "🎶 Tiktok"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/TikTok.list"
 
-[[rulesets]]
 group = "📹 油管视频"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
 
-[[rulesets]]
 group = "🎥 奈飞视频"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list"
 
-[[rulesets]]
 group = "🔞 魅力艺术"
 ruleset = "https://raw.githubusercontent.com/Passerby1011/Garbage-dump/refs/heads/main/PH.list"
 
-[[rulesets]]
 group = "📺 巴哈姆特"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list"
 
-[[rulesets]]
 group = "📺 哔哩哔哩"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list"
 
-[[rulesets]]
 group = "📺 哔哩哔哩"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
 
-[[rulesets]]
 group = "🌏 国内媒体"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list"
 
-[[rulesets]]
 group = "🌍 国外媒体"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
 
-[[rulesets]]
 group = "🚀 节点选择"
 ruleset = "[]GEOSITE,gfw"
 
-[[rulesets]]
 group = "🚀 节点选择"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
 
-[[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.list,28800"
 
-[[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/rule/IPTVMainland_Domain.list,28800"
 
-[[rulesets]]
 group = "🎯 全球直连"
 ruleset = "clash-domain:https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
 
-[[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
 
-[[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list"
 
-[[rulesets]]
 group = "🎯 全球直连"
 ruleset = "[]GEOSITE,cn"
 
-[[rulesets]]
 group = "🎯 全球直连"
 ruleset = "clash-ipcidr:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt,no-resolve"
 
-[[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list,no-resolve"
 
-[[rulesets]]
 group = "🎯 全球直连"
 ruleset = "[]GEOIP,CN,no-resolve"
 
-[[rulesets]]
 group = "🐟 漏网之鱼"
 ruleset = "[]FINAL"
 
