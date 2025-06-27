@@ -441,8 +441,8 @@ name = "💦负载均衡"
 type = "load-balance"
 rule = [ "(港|HK|hk|Hong Kong|HongKong|hongkong|🇭🇰|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America|🇺🇸|台|新北|彰化|TW|Taiwan|🇹🇼|新加坡|坡|狮城|SG|Singapore|🇸🇬|KR|Korea|KOR|首尔|韩|韓|🇰🇷)",]
 url = "http://www.gstatic.com/generate_204"
-interval = 300
 strategy = "round-robin"
+interval = 300
 tolerance = 75
 
 [[custom_groups]]
