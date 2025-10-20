@@ -1,1 +1,16 @@
-
+DOMAIN-KEYWORD,bybit
+# Bybit 主域名
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bybit.biz
+DOMAIN-SUFFIX,bybit.nl
+DOMAIN-SUFFIX,byhkbit.com
+DOMAIN-SUFFIX,bybit-tr.com
+# Bybit CDN 域名
+DOMAIN-SUFFIX,byapps.net
+DOMAIN-SUFFIX,bybdc6.com
+DOMAIN-SUFFIX,byabcde.com
+DOMAIN-SUFFIX,byd3c3.com
+DOMAIN-SUFFIX,bytick.com
+# 特定域名
+DOMAIN,monitor-frontend-collector.a.bybit-aws.com
+# AWS 相关规则（可选，用于完整覆盖）
