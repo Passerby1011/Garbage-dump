@@ -1,5 +1,7 @@
 # 内容：内容：AI平台-国外
 # 数量：43条
+DOMAIN-KEYWORD,genspark
+DOMAIN-KEYWORD,perplexity
 DOMAIN-KEYWORD,anthropic
 DOMAIN-KEYWORD,grok
 DOMAIN-KEYWORD,claude
@@ -45,3 +47,4 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,you.com
