@@ -49,3 +49,11 @@ DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,you.com
+DOMAIN-KEYWORD,cohere
+DOMAIN-KEYWORD,coze
+DOMAIN-KEYWORD,groq
+DOMAIN-SUFFIX,genspark.ai
+DOMAIN-SUFFIX,mcp.so
+DOMAIN-SUFFIX,neuroapi.host
+DOMAIN-SUFFIX,openai.azure.com
+DOMAIN-SUFFIX,aiplatform.googleapis.com
