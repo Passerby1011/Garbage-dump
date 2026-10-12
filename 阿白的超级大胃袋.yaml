@@ -1,0 +1,1477 @@
+mixed-port: 7897
+allow-lan: true
+mode: rule
+log-level: warning
+ipv6: false
+find-process-mode: strict
+unified-delay: true
+tcp-concurrent: true
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.0/16
+  fake-ip-filter-mode: blacklist
+  default-nameserver:
+  - 119.29.29.29
+  - 223.5.5.5
+  nameserver-policy:
+    geosite:cn,geolocation-cn,apple:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    +.cn:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    geosite:private:
+    - system
+    geosite:geolocation-!cn:
+    - https://1.1.1.1/dns-query#🚀 节点选择
+    - https://8.8.8.8/dns-query#🚀 节点选择
+  nameserver:
+  - https://223.5.5.5/dns-query
+  proxy-server-nameserver:
+  - https://223.5.5.5/dns-query
+  - https://doh.pub/dns-query
+  direct-nameserver:
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+  direct-nameserver-follow-policy: true
+  fake-ip-filter:
+  - geosite:private
+  - geosite:category-ntp
+  - '*.lan'
+  - '*.local'
+  - '*.arpa'
+  - time.*.com
+  - ntp.*.com
+  - +.market.xiaomi.com
+  - localhost.ptlogin2.qq.com
+  - '*.msftncsi.com'
+  - www.msftconnecttest.com
+  - +.push.apple.com
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - 8080-8880
+      override-destination: true
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+  skip-domain:
+  - +.push.apple.com
+  - +.linux.do
+  - +.snapshot.apple.com
+tun:
+  enable: true
+  stack: system
+  device: Ethernet99
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+  - any:53
+  - tcp://any:53
+  strict-route: true
+  mtu: 1500
+FilterTWHK: ^(?=.*((?i)🇭🇰|香港|港|HK|Hong|🇹🇼|台湾|台|新北|彰化|TW|Taiwan))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+FilterTemp: ^(?=.*((?i)P1|临时))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P2|P3)).*$
+FilterHK: ^(?=.*((?i)🇭🇰|香港|港|HK|Hong))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+FilterTW: ^(?=.*((?i)🇹🇼|台湾|台|新北|彰化|TW|Taiwan))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+FilterJP: ^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+FilterKR: ^(?=.*((?i)🇰🇷|韩国|韩|韓|首尔|KR|Korea|KOR))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+FilterSG: ^(?=.*((?i)🇸🇬|新加坡|坡|狮城|SG|Singapore))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+FilterUS: ^(?=.*((?i)🇺🇸|美国|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+FilterOthers: ^(?!.*((?i)🇭🇰|香港|港|HK|Hong|🇹🇼|台湾|台|新北|彰化|TW|Taiwan|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇸🇬|新加坡|坡|狮城|SG|Singapore|🇺🇸|美国|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America|🇰🇷|韩国|韩|韓|首尔|KR|Korea|KOR|回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|P1)).*$
+FilterNetflix: ^(?=.*((?i)NF|奈飞|解锁|流媒体|媒体|Netflix|NETFLIX|Media))(?!.*((?i)家宽)).*$
+FilterHomeWidth: ^(?=.*((?i)家宽|P3)).*$
+FilterSpecialRate: ^(?=.*((0\.01|0\.02|0\.03|0\.04|0\.05|0\.06|0\.07|0\.08|0\.09|0\.1|0\.2|0\.3|0\.4|0\.5|0\.6|0\.7|0\.8|0\.9|1\.5|2|2\.5|3|3\.5|4|4\.5|5|5\.5|6|6\.5|7|7\.5|8|8\.5|9)(X|x|×)|(X|x|×)(0\.01|0\.02|0\.03|0\.04|0\.05|0\.06|0\.07|0\.08|0\.09|0\.1|0\.2|0\.3|0\.4|0\.5|0\.6|0\.7|0\.8|0\.9|1\.5|2|2\.5|3|3\.5|4|4\.5|5|5\.5|6|6\.5|7|7\.5|8|8\.5|9)))(?!.*((?i)家宽|P1|P3)).*$
+FilterAll: ^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|P1|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author)\b|(\d{4}-\d{2}-\d{2}|\d+G)))).*$
+Select:
+  type: select
+  url: http://www.gstatic.com/generate_204
+  disable-udp: false
+  hidden: false
+  include-all: true
+UrlTest:
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+  lazy: true
+  tolerance: 50
+  timeout: 6000
+  disable-udp: false
+  max-failed-times: 3
+  hidden: true
+  include-all: true
+FallBack:
+  type: fallback
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+  lazy: true
+  timeout: 6000
+  disable-udp: false
+  max-failed-times: 3
+  hidden: true
+  include-all: true
+LoadBalance:
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+  lazy: true
+  disable-udp: false
+  strategy: consistent-hashing
+  timeout: 6000
+  max-failed-times: 3
+  hidden: true
+  include-all: true
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🚀 手动切换
+  - 🏁 其他节点
+  - 🛖 优质节点
+  - 🏳️‍🌈 特殊倍率节点
+  - 🤪 临时节点组
+  - 💦 负载均衡
+  - DIRECT
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png
+- type: select
+  url: http://www.gstatic.com/generate_204
+  disable-udp: false
+  hidden: false
+  include-all: true
+  name: 🚀 手动切换
+  filter: ^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|P1|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author)\b|(\d{4}-\d{2}-\d{2}|\d+G)))).*$
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Cylink.png
+- type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+  lazy: true
+  tolerance: 50
+  timeout: 6000
+  disable-udp: false
+  max-failed-times: 3
+  hidden: true
+  include-all: true
+  name: ♻️ 自动选择
+  filter: ^(?=.*((?i)🇭🇰|香港|港|HK|Hong|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇺🇸|美国|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|America|🇹🇼|台湾|台|新北|彰化|TW|Taiwan|🇸🇬|新加坡|坡|狮城|SG|Singapore|🇰🇷|韩国|韩|韓|首尔|KR|Korea))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|风萧萧兮|家宽|P1|P3)).*$
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
+- disable-udp: false
+  filter: ^(?=.*((?i)P1|临时))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P2|P3)).*$
+  hidden: false
+  include-all: true
+  interval: 180
+  lazy: true
+  max-failed-times: 3
+  name: 🤪 临时节点组
+  timeout: 6000
+  tolerance: 50
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+- type: select
+  url: http://www.gstatic.com/generate_204
+  disable-udp: false
+  hidden: false
+  include-all: true
+  name: 🐟 LinuxDO
+  filter: ^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|P1|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author)\b|(\d{4}-\d{2}-\d{2}|\d+G)))).*$
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🏳️‍🌈 特殊倍率节点
+  - 💦 负载均衡
+  - 🛖 优质节点
+  - 🤪 临时节点组
+  - DIRECT
+  icon: data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnktcHMiIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGNsaXBQYXRoIGlkPSJhIj4KICAgIDxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjQ3Ii8+CiAgPC9jbGlwUGF0aD4KICA8Y2lyY2xlIGZpbGw9IiNmMGYwZjAiIGN4PSI2MCIgY3k9IjYwIiByPSI1MCIvPgogIDxyZWN0IGZpbGw9IiMxYzFjMWUiIGNsaXAtcGF0aD0idXJsKCNhKSIgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjMwIi8+CiAgPHJlY3QgZmlsbD0iI2YwZjBmMCIgY2xpcC1wYXRoPSJ1cmwoI2EpIiB4PSIxMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNDAiLz4KICA8cmVjdCBmaWxsPSIjZmZiMDAzIiBjbGlwLXBhdGg9InVybCgjYSkiIHg9IjEwIiB5PSI4MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIzMCIvPgo8L3N2Zz4K
+- name: 📲 电报消息
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🚀 手动切换
+  - 🏁 其他节点
+  - 🏳️‍🌈 特殊倍率节点
+  - 💦 负载均衡
+  - 🛖 优质节点
+  - 🤪 临时节点组
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+- name: 🤖 AI
+  type: select
+  filter: ^(?=.*((?i)家宽|P3)).*$
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🛖 优质节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🚀 手动切换
+  - 🏁 其他节点
+  - 🏳️‍🌈 特殊倍率节点
+  - 💦 负载均衡
+  - 🤪 临时节点组
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
+- name: 📹 油管视频
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🚀 手动切换
+  - 🏁 其他节点
+  - 🏳️‍🌈 特殊倍率节点
+  - 💦 负载均衡
+  - 🛖 优质节点
+  - 🤪 临时节点组
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
+- type: select
+  url: http://www.gstatic.com/generate_204
+  disable-udp: false
+  hidden: false
+  include-all: true
+  name: 🎥 影音娱乐
+  filter: ^(?=.*((?i)NF|奈飞|解锁|流媒体|媒体|Netflix|NETFLIX|Media))(?!.*((?i)家宽)).*$
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🚀 手动切换
+  - 🏁 其他节点
+  - 🏳️‍🌈 特殊倍率节点
+  - 💦 负载均衡
+  - 🛖 优质节点
+  - 🤪 临时节点组
+  - DIRECT
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Netflix.png
+- type: select
+  url: http://www.gstatic.com/generate_204
+  disable-udp: false
+  hidden: false
+  include-all: true
+  name: 📺 巴哈姆特
+  filter: ^(?=.*((?i)🇹🇼|台湾|台|新北|彰化|TW|Taiwan))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+  proxies:
+  - 🇨🇳 台湾节点
+  - 🚀 节点选择
+  - DIRECT
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bahamut.png
+- type: select
+  url: http://www.gstatic.com/generate_204
+  disable-udp: false
+  hidden: false
+  include-all: true
+  name: 📺 哔哩哔哩
+  filter: ^(?=.*((?i)🇭🇰|香港|港|HK|Hong|🇹🇼|台湾|台|新北|彰化|TW|Taiwan))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+  proxies:
+  - 🎯 全球直连
+  - 🇨🇳 台湾节点
+  - 🇭🇰 香港节点
+  - 🚀 节点选择
+  - 🤪 临时节点组
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bili.png
+- name: 🔞 魅力艺术
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🚀 手动切换
+  - ♻️ 自动选择
+  - 🤪 临时节点组
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🏳️‍🌈 特殊倍率节点
+  - 💦 负载均衡
+  - DIRECT
+- name: 🌍 国外媒体
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🚀 手动切换
+  - 🏁 其他节点
+  - 🏳️‍🌈 特殊倍率节点
+  - 💦 负载均衡
+  - 🤪 临时节点组
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png
+- name: 🐦 Twitter
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🛖 优质节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🚀 手动切换
+  - 🏁 其他节点
+  - 🏳️‍🌈 特殊倍率节点
+  - 🤪 临时节点组
+  - 💦 负载均衡
+- name: 🎶 Tiktok
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🛖 优质节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🚀 手动切换
+  - 🏁 其他节点
+  - 🏳️‍🌈 特殊倍率节点
+  - 🤪 临时节点组
+  - 💦 负载均衡
+- name: 🎮 游戏平台
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🚀 手动切换
+  - 🏁 其他节点
+  - 🏳️‍🌈 特殊倍率节点
+  - 💦 负载均衡
+  - 🤪 临时节点组
+- icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png
+  name: Ⓜ️ 微软Bing
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🚀 手动切换
+  - 🏁 其他节点
+  - 🏳️‍🌈 特殊倍率节点
+  - 💦 负载均衡
+  - 🛖 优质节点
+  - 🤪 临时节点组
+  type: select
+- icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png
+  name: Ⓜ️ 微软云盘
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🚀 手动切换
+  - 🏁 其他节点
+  - 🏳️‍🌈 特殊倍率节点
+  - 💦 负载均衡
+  - 🛖 优质节点
+  - 🤪 临时节点组
+  type: select
+- name: Ⓜ️ 微软服务
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🚀 手动切换
+  - 🏁 其他节点
+  - 🏳️‍🌈 特殊倍率节点
+  - 💦 负载均衡
+  - 🛖 优质节点
+  - 🤪 临时节点组
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/China.png
+- name: 🍃 应用净化
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - DIRECT
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🚀 手动切换
+  - 🏁 其他节点
+  - 🏳️‍🌈 特殊倍率节点
+  - 💦 负载均衡
+  - 🛖 优质节点
+  - 🤪 临时节点组
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png
+- type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+  lazy: true
+  tolerance: 50
+  timeout: 6000
+  disable-udp: false
+  max-failed-times: 3
+  hidden: true
+  include-all: true
+  name: 🇭🇰 香港节点
+  filter: ^(?=.*((?i)🇭🇰|香港|港|HK|Hong))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+- type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+  lazy: true
+  tolerance: 50
+  timeout: 6000
+  disable-udp: false
+  max-failed-times: 3
+  hidden: true
+  include-all: true
+  name: 🇯🇵 日本节点
+  filter: ^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+- type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+  lazy: true
+  tolerance: 50
+  timeout: 6000
+  disable-udp: false
+  max-failed-times: 3
+  hidden: true
+  include-all: true
+  name: 🇰🇷 韩国节点(预留)
+  filter: ^(?=.*((?i)🇰🇷|韩国|韩|韓|首尔|KR|Korea|KOR))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+- type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+  lazy: true
+  tolerance: 50
+  timeout: 6000
+  disable-udp: false
+  max-failed-times: 3
+  hidden: true
+  include-all: true
+  name: 🇸🇬 狮城节点
+  filter: ^(?=.*((?i)🇸🇬|新加坡|坡|狮城|SG|Singapore))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+- type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+  lazy: true
+  tolerance: 150
+  timeout: 6000
+  disable-udp: false
+  max-failed-times: 3
+  hidden: true
+  include-all: true
+  name: 🇺🇲 美国节点
+  filter: ^(?=.*((?i)🇺🇸|美国|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+- type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+  lazy: true
+  tolerance: 50
+  timeout: 6000
+  disable-udp: false
+  max-failed-times: 3
+  hidden: true
+  include-all: true
+  name: 🇨🇳 台湾节点
+  filter: ^(?=.*((?i)🇹🇼|台湾|台|新北|彰化|TW|Taiwan))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+- type: select
+  url: http://www.gstatic.com/generate_204
+  disable-udp: false
+  hidden: false
+  include-all: true
+  name: 🏁 其他节点
+  filter: ^(?!.*((?i)🇭🇰|香港|港|HK|Hong|🇹🇼|台湾|台|新北|彰化|TW|Taiwan|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇸🇬|新加坡|坡|狮城|SG|Singapore|🇺🇸|美国|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America|🇰🇷|韩国|韩|韓|首尔|KR|Korea|KOR|回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|P1)).*$
+- type: select
+  url: http://www.gstatic.com/generate_204
+  disable-udp: false
+  hidden: false
+  include-all: true
+  name: 🏳️‍🌈 特殊倍率节点
+  filter: ^(?=.*((0\.01|0\.02|0\.03|0\.04|0\.05|0\.06|0\.07|0\.08|0\.09|0\.1|0\.2|0\.3|0\.4|0\.5|0\.6|0\.7|0\.8|0\.9|1\.5|2|2\.5|3|3\.5|4|4\.5|5|5\.5|6|6\.5|7|7\.5|8|8\.5|9)(X|x|×)|(X|x|×)(0\.01|0\.02|0\.03|0\.04|0\.05|0\.06|0\.07|0\.08|0\.09|0\.1|0\.2|0\.3|0\.4|0\.5|0\.6|0\.7|0\.8|0\.9|1\.5|2|2\.5|3|3\.5|4|4\.5|5|5\.5|6|6\.5|7|7\.5|8|8\.5|9)))(?!.*((?i)家宽|P1|P3)).*$
+- type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+  lazy: true
+  disable-udp: false
+  strategy: consistent-hashing
+  timeout: 6000
+  max-failed-times: 3
+  hidden: true
+  include-all: true
+  name: 💦 负载均衡
+  filter: ^(?=.*((?i)🇭🇰|香港|港|HK|Hong|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇺🇸|美国|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|America|🇹🇼|台湾|台|新北|彰化|TW|Taiwan|🇸🇬|新加坡|坡|狮城|SG|Singapore|🇰🇷|韩国|韩|韓|首尔|KR|Korea))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|P1|P3)).*$
+  tolerance: 75
+- type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+  lazy: true
+  tolerance: 50
+  timeout: 6000
+  disable-udp: false
+  max-failed-times: 3
+  hidden: false
+  include-all: true
+  name: 🛖 优质节点
+  filter: ^(?=.*((?i)家宽|P3)).*$
+rule-providers:
+  Custom:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/Passerby1011/Garbage-dump/main/rules/custom.list
+    path: ./rules/custom.list
+  DirectOverride:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/Passerby1011/Garbage-dump/main/rules/direct-override.list
+    path: ./rules/direct-override.list
+  Bybit:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/Passerby1011/Garbage-dump/main/rules/bybit.list
+    path: ./rules/bybit.list
+  PH:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/Passerby1011/Garbage-dump/main/rules/PH.list
+    path: ./rules/PH.list
+  GoogleCNProxyIP:
+    type: http
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/Passerby1011/Garbage-dump/main/rules/GoogleCNProxyIP.list
+    path: ./rules/GoogleCNProxyIP.list
+  GEOSITE-CN:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs
+    path: ./rules/mrs/geosite-cn.mrs
+  GEOSITE-CN-EX:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-cn.mrs
+    path: ./rules/mrs/geolocation-cn.mrs
+  GEOSITE-GFW:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.mrs
+    path: ./rules/mrs/geosite-gfw.mrs
+  GEOSITE-ADS:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs
+    path: ./rules/mrs/geosite-ads.mrs
+  GEOSITE-GAMES:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games.mrs
+    path: ./rules/mrs/geosite-games.mrs
+  GEOSITE-MEDIA:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-media.mrs
+    path: ./rules/mrs/geosite-media.mrs
+  GEOSITE-AI:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-chat-!cn.mrs
+    path: ./rules/mrs/geosite-ai.mrs
+  GEOSITE-NETFILM:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs
+    path: ./rules/mrs/geosite-netfilm.mrs
+  GS-openai:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.mrs
+    path: ./rules/mrs/gs-openai.mrs
+  GS-anthropic:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/anthropic.mrs
+    path: ./rules/mrs/gs-anthropic.mrs
+  GS-google-gemini:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google-gemini.mrs
+    path: ./rules/mrs/gs-google-gemini.mrs
+  GS-microsoft:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs
+    path: ./rules/mrs/gs-microsoft.mrs
+  GS-microsoft-dev:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft-dev.mrs
+    path: ./rules/mrs/gs-microsoft-dev.mrs
+  GS-onedrive:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs
+    path: ./rules/mrs/gs-onedrive.mrs
+  GS-bing:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bing.mrs
+    path: ./rules/mrs/gs-bing.mrs
+  GS-apple:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs
+    path: ./rules/mrs/gs-apple.mrs
+  GS-google-cn:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google-cn.mrs
+    path: ./rules/mrs/gs-google-cn.mrs
+  GS-youtube:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs
+    path: ./rules/mrs/gs-youtube.mrs
+  GS-telegram:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs
+    path: ./rules/mrs/gs-telegram.mrs
+  GS-twitter:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.mrs
+    path: ./rules/mrs/gs-twitter.mrs
+  GS-tiktok:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs
+    path: ./rules/mrs/gs-tiktok.mrs
+  GS-spotify:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs
+    path: ./rules/mrs/gs-spotify.mrs
+  GS-disney:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/disney.mrs
+    path: ./rules/mrs/gs-disney.mrs
+  GS-github:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs
+    path: ./rules/mrs/gs-github.mrs
+  GS-docker:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/docker.mrs
+    path: ./rules/mrs/gs-docker.mrs
+  GS-cloudflare:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cloudflare.mrs
+    path: ./rules/mrs/gs-cloudflare.mrs
+  GS-steam:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs
+    path: ./rules/mrs/gs-steam.mrs
+  GS-epicgames:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/epicgames.mrs
+    path: ./rules/mrs/gs-epicgames.mrs
+  GS-ea:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ea.mrs
+    path: ./rules/mrs/gs-ea.mrs
+  GS-playstation:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/playstation.mrs
+    path: ./rules/mrs/gs-playstation.mrs
+  GS-xbox:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/xbox.mrs
+    path: ./rules/mrs/gs-xbox.mrs
+  GS-nintendo:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/nintendo.mrs
+    path: ./rules/mrs/gs-nintendo.mrs
+  GS-blizzard:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/blizzard.mrs
+    path: ./rules/mrs/gs-blizzard.mrs
+  GS-riot:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/riot.mrs
+    path: ./rules/mrs/gs-riot.mrs
+  GS-huggingface:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/huggingface.mrs
+    path: ./rules/mrs/gs-huggingface.mrs
+  GS-jetbrains-ai:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/jetbrains-ai.mrs
+    path: ./rules/mrs/gs-jetbrains-ai.mrs
+  GS-perplexity:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/perplexity.mrs
+    path: ./rules/mrs/gs-perplexity.mrs
+  GS-xai:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/xai.mrs
+    path: ./rules/mrs/gs-xai.mrs
+  GS-groq:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/groq.mrs
+    path: ./rules/mrs/gs-groq.mrs
+  GS-poe:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/poe.mrs
+    path: ./rules/mrs/gs-poe.mrs
+  GS-cursor:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cursor.mrs
+    path: ./rules/mrs/gs-cursor.mrs
+  AI-Global:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/Passerby1011/Garbage-dump/main/rules/ai-global.list
+    path: ./rules/ai-global.list
+  AI-Coding:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/Passerby1011/Garbage-dump/main/rules/ai-coding.list
+    path: ./rules/ai-coding.list
+  AI-Model:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/Passerby1011/Garbage-dump/main/rules/ai-model.list
+    path: ./rules/ai-model.list
+  cncidr:
+    type: http
+    behavior: ipcidr
+    format: yaml
+    interval: 43200
+    proxy: 🚀 节点选择
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
+    path: ./rules/cncidr.yaml
+  LAN:
+    type: http
+    behavior: classical
+    format: text
+    interval: 43200
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+    path: ./rules/lan.list
+  Download:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/Passerby1011/Garbage-dump/main/rules/download.list
+    path: ./rules/download.list
+  BilibiliHMT:
+    type: http
+    behavior: classical
+    format: text
+    interval: 43200
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
+    path: ./rules/bili-hmt.list
+  cncidr-telegram:
+    type: http
+    behavior: ipcidr
+    format: yaml
+    interval: 43200
+    proxy: 🚀 节点选择
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
+    path: ./rules/telegramcidr.yaml
+  GS-discord:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/discord.mrs
+    path: ./rules/mrs/gs-discord.mrs
+  GS-apple-cn:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs
+    path: ./rules/mrs/gs-apple-cn.mrs
+  Bahamut:
+    type: http
+    behavior: classical
+    format: text
+    interval: 43200
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list
+    path: ./rules/bahamut.list
+  Ad-All:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising.list
+    path: ./rules/ad-all.list
+  Ad-Reject:
+    type: http
+    behavior: domain
+    format: yaml
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+    path: ./rules/ad-reject.yaml
+  Ad-Program:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+    path: ./rules/ad-program.list
+  GS-dev:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-dev.mrs
+    path: ./rules/GS-dev.mrs
+  GS-container:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-container.mrs
+    path: ./rules/GS-container.mrs
+  GS-remote:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-remote-control.mrs
+    path: ./rules/GS-remote.mrs
+  GS-speedtest:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-speedtest.mrs
+    path: ./rules/GS-speedtest.mrs
+  GS-ipgeo:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ip-geo-detect.mrs
+    path: ./rules/GS-ipgeo.mrs
+  GS-pwd:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-password-management.mrs
+    path: ./rules/GS-pwd.mrs
+  GS-finance:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-finance.mrs
+    path: ./rules/GS-finance.mrs
+  GS-ecommerce:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ecommerce.mrs
+    path: ./rules/GS-ecommerce.mrs
+  GS-scholar:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-scholar-!cn.mrs
+    path: ./rules/GS-scholar.mrs
+  GS-orgs:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-orgs.mrs
+    path: ./rules/GS-orgs.mrs
+  GS-anticensor:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-anticensorship.mrs
+    path: ./rules/GS-anticensor.mrs
+  GS-vpn:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-vpnservices.mrs
+    path: ./rules/GS-vpn.mrs
+  GS-pt:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-pt.mrs
+    path: ./rules/GS-pt.mrs
+  GS-tracker:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-public-tracker.mrs
+    path: ./rules/GS-tracker.mrs
+  GS-browser:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-browser-!cn.mrs
+    path: ./rules/GS-browser.mrs
+  GS-adobe:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/adobe.mrs
+    path: ./rules/GS-adobe.mrs
+  GS-paypal:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs
+    path: ./rules/GS-paypal.mrs
+  GS-figma:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/figma.mrs
+    path: ./rules/GS-figma.mrs
+  GS-slack:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/slack.mrs
+    path: ./rules/GS-slack.mrs
+  GS-notion:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/notion.mrs
+    path: ./rules/GS-notion.mrs
+  GS-zoom:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/zoom.mrs
+    path: ./rules/GS-zoom.mrs
+  GS-dropbox:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/dropbox.mrs
+    path: ./rules/GS-dropbox.mrs
+  GS-forums:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-forums.mrs
+    path: ./rules/GS-forums.mrs
+  GS-social-nocn:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-social-media-!cn.mrs
+    path: ./rules/GS-social-nocn.mrs
+  GS-comm:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-communication.mrs
+    path: ./rules/GS-comm.mrs
+  GS-reddit:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/reddit.mrs
+    path: ./rules/GS-reddit.mrs
+  GS-entertain:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-entertainment.mrs
+    path: ./rules/GS-entertain.mrs
+  GS-emby:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-emby.mrs
+    path: ./rules/GS-emby.mrs
+  GS-twitch:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitch.mrs
+    path: ./rules/GS-twitch.mrs
+  GS-gamesnocn:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games-!cn.mrs
+    path: ./rules/GS-gamesnocn.mrs
+  GS-aichat:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-chat-!cn.mrs
+    path: ./rules/GS-aichat.mrs
+  GS-crypto:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-cryptocurrency.mrs
+    path: ./rules/GS-crypto.mrs
+  OwnMedia:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/Passerby1011/Garbage-dump/main/rules/own-media.list
+    path: ./rules/own-media.list
+  OwnSG:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/Passerby1011/Garbage-dump/main/rules/own-sg.list
+    path: ./rules/own-sg.list
+  LinuxDO:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/Passerby1011/Garbage-dump/main/rules/linuxdo.list
+    path: ./rules/linuxdo.list
+  PH-Meta:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-porn.mrs
+    path: ./rules/PH-Meta.mrs
+  PH-Extra:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    proxy: 🚀 节点选择
+    url: https://raw.githubusercontent.com/Passerby1011/Garbage-dump/main/rules/ph-extra.list
+    path: ./rules/PH-extra.list
+rules:
+- RULE-SET,DirectOverride,🎯 全球直连
+- RULE-SET,LAN,🎯 全球直连
+- RULE-SET,PH-Meta,🔞 魅力艺术
+- RULE-SET,PH-Extra,🔞 魅力艺术
+- RULE-SET,PH,🔞 魅力艺术
+- RULE-SET,Ad-Program,🍃 应用净化
+- RULE-SET,Ad-All,🍃 应用净化
+- RULE-SET,Ad-Reject,🍃 应用净化
+- RULE-SET,GEOSITE-ADS,🍃 应用净化
+- RULE-SET,Custom,🚀 节点选择
+- RULE-SET,OwnSG,🇸🇬 狮城节点
+- RULE-SET,Bybit,🏁 其他节点
+- RULE-SET,LinuxDO,🐟 LinuxDO
+- RULE-SET,AI-Model,🤖 AI
+- RULE-SET,AI-Coding,🤖 AI
+- RULE-SET,AI-Global,🤖 AI
+- RULE-SET,GS-openai,🤖 AI
+- RULE-SET,GS-anthropic,🤖 AI
+- RULE-SET,GS-google-gemini,🤖 AI
+- RULE-SET,GS-perplexity,🤖 AI
+- RULE-SET,GS-xai,🤖 AI
+- RULE-SET,GS-groq,🤖 AI
+- RULE-SET,GS-poe,🤖 AI
+- RULE-SET,GS-cursor,🤖 AI
+- RULE-SET,GS-jetbrains-ai,🤖 AI
+- RULE-SET,GEOSITE-AI,🤖 AI
+- RULE-SET,GS-bing,Ⓜ️ 微软Bing
+- RULE-SET,GS-onedrive,Ⓜ️ 微软云盘
+- RULE-SET,GS-microsoft-dev,Ⓜ️ 微软服务
+- RULE-SET,GS-microsoft,Ⓜ️ 微软服务
+- RULE-SET,GS-github,🚀 节点选择
+- RULE-SET,GS-docker,🚀 节点选择
+- RULE-SET,GS-huggingface,🚀 节点选择
+- RULE-SET,GS-cloudflare,🚀 手动切换
+- RULE-SET,GS-apple-cn,🎯 全球直连
+- RULE-SET,GS-apple,🎯 全球直连
+- RULE-SET,GS-google-cn,🎯 全球直连
+- RULE-SET,GoogleCNProxyIP,🎯 全球直连
+- RULE-SET,GS-telegram,📲 电报消息
+- RULE-SET,cncidr-telegram,📲 电报消息,no-resolve
+- RULE-SET,GS-twitter,🐦 Twitter
+- RULE-SET,GS-discord,🐦 Twitter
+- RULE-SET,GS-spotify,🌍 国外媒体
+- RULE-SET,GS-tiktok,🎶 Tiktok
+- RULE-SET,GS-youtube,📹 油管视频
+- RULE-SET,GS-disney,🎥 影音娱乐
+- RULE-SET,OwnMedia,🎥 影音娱乐
+- RULE-SET,GEOSITE-MEDIA,🎥 影音娱乐
+- RULE-SET,GEOSITE-NETFILM,🎥 影音娱乐
+- RULE-SET,BilibiliHMT,📺 哔哩哔哩
+- RULE-SET,Bahamut,📺 巴哈姆特
+- RULE-SET,GS-steam,🎮 游戏平台
+- RULE-SET,GS-epicgames,🎮 游戏平台
+- RULE-SET,GS-ea,🎮 游戏平台
+- RULE-SET,GS-playstation,🎮 游戏平台
+- RULE-SET,GS-xbox,🎮 游戏平台
+- RULE-SET,GS-nintendo,🎮 游戏平台
+- RULE-SET,GS-blizzard,🎮 游戏平台
+- RULE-SET,GS-riot,🎮 游戏平台
+- RULE-SET,GS-orgs,🚀 节点选择
+- RULE-SET,GS-forums,🐦 Twitter
+- RULE-SET,GS-comm,🐦 Twitter
+- RULE-SET,GS-reddit,🐦 Twitter
+- RULE-SET,GS-emby,🎥 影音娱乐
+- RULE-SET,GS-twitch,🌍 国外媒体
+- RULE-SET,GS-aichat,🤖 AI
+- RULE-SET,GS-crypto,🏁 其他节点
+- RULE-SET,GS-container,🚀 节点选择
+- RULE-SET,GS-pwd,🚀 节点选择
+- RULE-SET,GS-anticensor,🚀 节点选择
+- RULE-SET,GS-vpn,🚀 节点选择
+- RULE-SET,GS-browser,🚀 节点选择
+- RULE-SET,GS-figma,🚀 节点选择
+- RULE-SET,GS-slack,🚀 节点选择
+- RULE-SET,GS-notion,🚀 节点选择
+- RULE-SET,GS-dropbox,🚀 节点选择
+- RULE-SET,GEOSITE-GFW,🚀 节点选择
+- DOMAIN-SUFFIX,cn,🎯 全球直连
+- RULE-SET,GEOSITE-CN,🎯 全球直连
+- RULE-SET,GEOSITE-CN-EX,🎯 全球直连
+- RULE-SET,Download,🎯 全球直连
+- RULE-SET,cncidr,🎯 全球直连
+- GEOIP,CN,🎯 全球直连
+- RULE-SET,GS-dev,🚀 节点选择
+- RULE-SET,GS-remote,🚀 节点选择
+- RULE-SET,GS-speedtest,🚀 节点选择
+- RULE-SET,GS-ipgeo,🚀 节点选择
+- RULE-SET,GS-finance,🚀 节点选择
+- RULE-SET,GS-ecommerce,🚀 节点选择
+- RULE-SET,GS-scholar,🚀 节点选择
+- RULE-SET,GS-pt,🚀 节点选择
+- RULE-SET,GS-tracker,🚀 节点选择
+- RULE-SET,GS-adobe,🚀 节点选择
+- RULE-SET,GS-paypal,🚀 节点选择
+- RULE-SET,GS-zoom,🚀 节点选择
+- RULE-SET,GS-social-nocn,🐦 Twitter
+- RULE-SET,GS-entertain,🎥 影音娱乐
+- RULE-SET,GS-gamesnocn,🎮 游戏平台
+- RULE-SET,GEOSITE-GAMES,🎮 游戏平台
+- MATCH,🐟 漏网之鱼
