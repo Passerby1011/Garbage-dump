@@ -1412,7 +1412,6 @@ rules:
 - RULE-SET,GS-apple-cn,🎯 全球直连
 - RULE-SET,GS-apple,🎯 全球直连
 - RULE-SET,GS-google-cn,🎯 全球直连
-- RULE-SET,GoogleCNProxyIP,🎯 全球直连
 - RULE-SET,GS-telegram,📲 电报消息
 - RULE-SET,cncidr-telegram,📲 电报消息,no-resolve
 - RULE-SET,GS-twitter,🐦 Twitter
@@ -1456,8 +1455,6 @@ rules:
 - RULE-SET,GEOSITE-CN,🎯 全球直连
 - RULE-SET,GEOSITE-CN-EX,🎯 全球直连
 - RULE-SET,Download,🎯 全球直连
-- RULE-SET,cncidr,🎯 全球直连
-- GEOIP,CN,🎯 全球直连
 - RULE-SET,GS-dev,🚀 节点选择
 - RULE-SET,GS-remote,🚀 节点选择
 - RULE-SET,GS-speedtest,🚀 节点选择
@@ -1474,4 +1471,7 @@ rules:
 - RULE-SET,GS-entertain,🎥 影音娱乐
 - RULE-SET,GS-gamesnocn,🎮 游戏平台
 - RULE-SET,GEOSITE-GAMES,🎮 游戏平台
+- RULE-SET,GoogleCNProxyIP,🎯 全球直连
+- RULE-SET,cncidr,🎯 全球直连,no-resolve
+- GEOIP,CN,🎯 全球直连
 - MATCH,🐟 漏网之鱼
