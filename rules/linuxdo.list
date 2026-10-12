@@ -1,0 +1,4 @@
+PROCESS-NAME,fluxdo.exe
+PROCESS-NAME,com.github.lingyan000.fluxdo
+DOMAIN-SUFFIX,linux.do
+DOMAIN-SUFFIX,cloudflare.com

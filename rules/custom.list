@@ -9,11 +9,6 @@ DOMAIN-SUFFIX,zeabur.com
 DOMAIN-SUFFIX,sub-store.passerbywtj.club
 DOMAIN-SUFFIX,oai.sb
 DOMAIN-SUFFIX,aihub.dog
-DOMAIN-SUFFIX,random.ouonet.org
-DOMAIN-SUFFIX,medi4.org
-DOMAIN-SUFFIX,luketv.tv
-IP-CIDR,47.238.105.50/32,no-resolve
-DOMAIN-SUFFIX,internal-antelope-13768.upstash.io
 DOMAIN-SUFFIX,charybdis.dragonetwork.pl
 DOMAIN-SUFFIX,dcoker.io
 DOMAIN-SUFFIX,glitch.me
@@ -29,10 +24,6 @@ DOMAIN-KEYWORD,sealos.io
 DOMAIN-SUFFIX,recaptcha.net
 
 # ---- LinuxDO（原 PROCESS-NAME + 域名）----
-PROCESS-NAME,fluxdo.exe
-PROCESS-NAME,com.github.lingyan000.fluxdo
-DOMAIN-SUFFIX,linux.do
-DOMAIN-SUFFIX,cloudflare.com
 
 # ---- 用户原设定：这些走代理（原配置内联规则）----
 DOMAIN-SUFFIX,translate.googleapis.com
