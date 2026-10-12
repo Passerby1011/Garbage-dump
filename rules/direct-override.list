@@ -17,3 +17,13 @@ DOMAIN-KEYWORD,tailscale
 # 个人
 DOMAIN-SUFFIX,greenrecipebook.com
 DOMAIN-SUFFIX,wangmai.cn
+
+# Google 中国直连域（GEOSITE-GFW 误收 google.cn/gstatic，此处强制直连优先）
+DOMAIN-SUFFIX,google.cn
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,recaptcha.net
+DOMAIN-SUFFIX,translate.googleapis.com

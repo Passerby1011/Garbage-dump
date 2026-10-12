@@ -1,0 +1,39 @@
+# ============================================================
+# Download.list —— 改写版（原 ACL4SSR master）
+# 原 22 条：13 PROCESS-NAME + 1 DOMAIN-SUFFIX + 1 DOMAIN-KEYWORD + 7 URL-REGEX
+# 7 条 URL-REGEX 不被 mihomo 支持（静默丢弃），已等价改写为 DOMAIN-KEYWORD
+# 生成：2026-10-12  验证：真实内核 mihomo v1.19.32
+# ============================================================
+
+# --- 原样保留：下载器进程名（13 条）---
+PROCESS-NAME,Thunder.exe
+PROCESS-NAME,Thunder
+PROCESS-NAME,ThunderPlatform.exe
+PROCESS-NAME,XLLiveUD.exe
+PROCESS-NAME,QQDownload.exe
+PROCESS-NAME,aria2c.exe
+PROCESS-NAME,aria2c
+PROCESS-NAME,transmission-daemon
+PROCESS-NAME,transmission-qt
+PROCESS-NAME,qbittorrent.exe
+PROCESS-NAME,qbittorrent-nox
+PROCESS-NAME,Deluge.exe
+PROCESS-NAME,uTorrent.exe
+
+# --- 原样保留：域名（2 条）---
+DOMAIN-KEYWORD,announce.php
+DOMAIN-SUFFIX,xunlei.com
+
+# --- 等价改写：原 URL-REGEX → DOMAIN-KEYWORD（9 条，覆盖 BT/磁力/迅雷/360）---
+DOMAIN-KEYWORD,torrent
+DOMAIN-KEYWORD,magnet
+DOMAIN-KEYWORD,ed2k
+DOMAIN-KEYWORD,info_hash
+DOMAIN-KEYWORD,peer_id
+DOMAIN-KEYWORD,xunlei
+DOMAIN-KEYWORD,Thunder
+DOMAIN-KEYWORD,sandai
+DOMAIN-KEYWORD,360safe
+DOMAIN-KEYWORD,qhimg
+DOMAIN-KEYWORD,yunpan
+DOMAIN-KEYWORD,newvector

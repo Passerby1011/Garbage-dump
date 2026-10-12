@@ -24,7 +24,6 @@ DOMAIN-SUFFIX,duckduckgo.com
 DOMAIN-SUFFIX,exa.ai
 DOMAIN-SUFFIX,tavily.com
 DOMAIN-KEYWORD,sealos.io
-DOMAIN-SUFFIX,translate.googleapis.com
 
 # ---- 开发者工具（meta 未覆盖或有拼写问题的）----
 DOMAIN-SUFFIX,recaptcha.net
