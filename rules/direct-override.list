@@ -1,0 +1,19 @@
+# 内容：强制直连白名单（优先级最高，覆盖一切代理规则）
+# 微软登录/推送/系统服务（原内联 DIRECT 规则收编）
+DOMAIN-SUFFIX,dcg.microsoft.com
+DOMAIN,dcg.microsoft.com
+DOMAIN-SUFFIX,wns.windows.com
+DOMAIN-SUFFIX,notify.windows.com
+DOMAIN,login.live.com
+DOMAIN,login.microsoftonline.com
+DOMAIN,phonelink.microsoft.com
+DOMAIN-SUFFIX,aka.ms
+DOMAIN-SUFFIX,mobile.events.data.microsoft.com
+DOMAIN-SUFFIX,service.signalr.net
+# 网络检测/工具站
+DOMAIN-SUFFIX,ifconfig.me
+DOMAIN-SUFFIX,socks5.io
+DOMAIN-KEYWORD,tailscale
+# 个人
+DOMAIN-SUFFIX,greenrecipebook.com
+DOMAIN-SUFFIX,wangmai.cn

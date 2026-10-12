@@ -1,0 +1,36 @@
+# 内容：个人自定义分流（收编自原配置内联规则）
+# 维护：新增个人域名加在这里，比散落内联规则好维护
+# 格式：mihomo classical（支持 DOMAIN*/IP-CIDR/PROCESS-NAME）
+
+# ---- 自建服务 / 强制代理 ----
+DOMAIN-SUFFIX,micu.hk
+DOMAIN-SUFFIX,gpt-load.rn.230617.xyz
+DOMAIN-SUFFIX,zeabur.com
+DOMAIN-SUFFIX,sub-store.passerbywtj.club
+DOMAIN-SUFFIX,oai.sb
+DOMAIN-SUFFIX,aihub.dog
+DOMAIN-SUFFIX,random.ouonet.org
+DOMAIN-SUFFIX,medi4.org
+DOMAIN-SUFFIX,luketv.tv
+IP-CIDR,47.238.105.50/32,no-resolve
+DOMAIN-SUFFIX,internal-antelope-13768.upstash.io
+DOMAIN-SUFFIX,charybdis.dragonetwork.pl
+DOMAIN-SUFFIX,dcoker.io
+DOMAIN-SUFFIX,glitch.me
+DOMAIN-SUFFIX,onrender.com
+DOMAIN-SUFFIX,mozilla.com
+DOMAIN-SUFFIX,yahoo.com
+DOMAIN-SUFFIX,duckduckgo.com
+DOMAIN-SUFFIX,exa.ai
+DOMAIN-SUFFIX,tavily.com
+DOMAIN-KEYWORD,sealos.io
+DOMAIN-SUFFIX,translate.googleapis.com
+
+# ---- 开发者工具（meta 未覆盖或有拼写问题的）----
+DOMAIN-SUFFIX,recaptcha.net
+
+# ---- LinuxDO（原 PROCESS-NAME + 域名）----
+PROCESS-NAME,fluxdo.exe
+PROCESS-NAME,com.github.lingyan000.fluxdo
+DOMAIN-SUFFIX,linux.do
+DOMAIN-SUFFIX,cloudflare.com
