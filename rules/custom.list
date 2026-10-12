@@ -33,3 +33,6 @@ PROCESS-NAME,fluxdo.exe
 PROCESS-NAME,com.github.lingyan000.fluxdo
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,cloudflare.com
+
+# ---- 用户原设定：这些走代理（原配置内联规则）----
+DOMAIN-SUFFIX,translate.googleapis.com
