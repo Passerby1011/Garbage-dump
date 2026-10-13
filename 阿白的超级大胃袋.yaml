@@ -245,6 +245,25 @@ proxy-groups:
   - 💦 负载均衡
   - 🤪 临时节点组
   icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
+- name: 🐙 GitHub
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🛖 优质节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🚀 手动切换
+  - 🏁 其他节点
+  - 🏳️‍🌈 特殊倍率节点
+  - 💦 负载均衡
+  - 🤪 临时节点组
+  - DIRECT
+  icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/github.svg
 - name: 📹 油管视频
   type: select
   proxies:
@@ -1403,9 +1422,9 @@ rules:
 - RULE-SET,GEOSITE-AI,🤖 AI
 - RULE-SET,GS-bing,Ⓜ️ 微软Bing
 - RULE-SET,GS-onedrive,Ⓜ️ 微软云盘
+- RULE-SET,GS-github,🐙 GitHub
 - RULE-SET,GS-microsoft-dev,Ⓜ️ 微软服务
 - RULE-SET,GS-microsoft,Ⓜ️ 微软服务
-- RULE-SET,GS-github,🚀 节点选择
 - RULE-SET,GS-docker,🚀 节点选择
 - RULE-SET,GS-huggingface,🚀 节点选择
 - RULE-SET,GS-cloudflare,🚀 手动切换
