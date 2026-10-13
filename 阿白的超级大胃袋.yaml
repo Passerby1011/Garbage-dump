@@ -186,6 +186,7 @@ proxy-groups:
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Auto.png
 - type: select
   url: http://www.gstatic.com/generate_204
   disable-udp: false
@@ -348,6 +349,7 @@ proxy-groups:
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
   - DIRECT
+  icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij4KPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzAiIGZpbGw9IiNFOTFFNjMiLz4KPHBhdGggZD0iTTMyIDQ3Yy0xIDAtMS42LS41LTIuMy0xLjFMMjAgMzYuNGMtMy4xLTIuOC00LjYtNS42LTQuNi04LjkgMC00LjMgMy4zLTcuNSA3LjQtNy41IDIuMyAwIDQuNSAxLjEgNi4yIDMgMS43LTEuOSAzLjktMyA2LjItMyA0LjEgMCA3LjQgMy4yIDcuNCA3LjUgMCAzLjMtMS41IDYuMS00LjYgOC45bC05LjcgOS41Yy0uNy42LTEuMyAxLjEtMi4zIDEuMXoiIGZpbGw9IiNmZmYiLz4KPC9zdmc+
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -382,6 +384,7 @@ proxy-groups:
   - 🏳️‍🌈 特殊倍率节点
   - 🤪 临时节点组
   - 💦 负载均衡
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Twitter.png
 - name: 🎶 Tiktok
   type: select
   proxies:
@@ -399,6 +402,7 @@ proxy-groups:
   - 🏳️‍🌈 特殊倍率节点
   - 🤪 临时节点组
   - 💦 负载均衡
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TikTok.png
 - name: 🎮 游戏平台
   type: select
   proxies:
@@ -416,7 +420,8 @@ proxy-groups:
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
   - 🤪 临时节点组
-- icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Steam.png
+- icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bing.png
   name: Ⓜ️ 微软Bing
   proxies:
   - DIRECT
@@ -435,7 +440,7 @@ proxy-groups:
   - 🛖 优质节点
   - 🤪 临时节点组
   type: select
-- icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png
+- icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij4KPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzAiIGZpbGw9IiMwMDc4RDQiLz4KPHBhdGggZD0iTTQ0IDQwSDIyYy00IDAtNy4yLTMuMi03LjItNy4yIDAtMy45IDMtNyA2LjgtNy4yLjYtNC41IDQuNC04IDktOCA0LjkgMCA4LjkgMy44IDkuMyA4LjYgMy40LjcgNS45IDMuNyA1LjkgNy4yIDAgMy42LTIuNCA2LjYtNS44IDYuNnoiIGZpbGw9IiNmZmYiLz4KPHBhdGggZD0iTTMyIDQ2VjMybTAgMGwtNSA1bTUtNWw1IDUiIHN0cm9rZT0iIzAwNzhENCIgc3Ryb2tlLXdpZHRoPSIzLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsbD0ibm9uZSIvPgo8L3N2Zz4=
   name: Ⓜ️ 微软云盘
   proxies:
   - DIRECT
@@ -517,6 +522,7 @@ proxy-groups:
   include-all: true
   name: 🇭🇰 香港节点
   filter: ^(?=.*((?i)🇭🇰|香港|港|HK|Hong))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
 - type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
@@ -529,6 +535,7 @@ proxy-groups:
   include-all: true
   name: 🇯🇵 日本节点
   filter: ^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
 - type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
@@ -541,6 +548,7 @@ proxy-groups:
   include-all: true
   name: 🇰🇷 韩国节点(预留)
   filter: ^(?=.*((?i)🇰🇷|韩国|韩|韓|首尔|KR|Korea|KOR))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
 - type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
@@ -553,6 +561,7 @@ proxy-groups:
   include-all: true
   name: 🇸🇬 狮城节点
   filter: ^(?=.*((?i)🇸🇬|新加坡|坡|狮城|SG|Singapore))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
 - type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
@@ -565,6 +574,7 @@ proxy-groups:
   include-all: true
   name: 🇺🇲 美国节点
   filter: ^(?=.*((?i)🇺🇸|美国|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 - type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
@@ -577,6 +587,7 @@ proxy-groups:
   include-all: true
   name: 🇨🇳 台湾节点
   filter: ^(?=.*((?i)🇹🇼|台湾|台|新北|彰化|TW|Taiwan))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
 - type: select
   url: http://www.gstatic.com/generate_204
   disable-udp: false
@@ -584,6 +595,7 @@ proxy-groups:
   include-all: true
   name: 🏁 其他节点
   filter: ^(?!.*((?i)🇭🇰|香港|港|HK|Hong|🇹🇼|台湾|台|新北|彰化|TW|Taiwan|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇸🇬|新加坡|坡|狮城|SG|Singapore|🇺🇸|美国|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|America|🇰🇷|韩国|韩|韓|首尔|KR|Korea|KOR|回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|P1)).*$
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png
 - type: select
   url: http://www.gstatic.com/generate_204
   disable-udp: false
@@ -591,6 +603,7 @@ proxy-groups:
   include-all: true
   name: 🏳️‍🌈 特殊倍率节点
   filter: ^(?=.*((0\.01|0\.02|0\.03|0\.04|0\.05|0\.06|0\.07|0\.08|0\.09|0\.1|0\.2|0\.3|0\.4|0\.5|0\.6|0\.7|0\.8|0\.9|1\.5|2|2\.5|3|3\.5|4|4\.5|5|5\.5|6|6\.5|7|7\.5|8|8\.5|9)(X|x|×)|(X|x|×)(0\.01|0\.02|0\.03|0\.04|0\.05|0\.06|0\.07|0\.08|0\.09|0\.1|0\.2|0\.3|0\.4|0\.5|0\.6|0\.7|0\.8|0\.9|1\.5|2|2\.5|3|3\.5|4|4\.5|5|5\.5|6|6\.5|7|7\.5|8|8\.5|9)))(?!.*((?i)家宽|P1|P3)).*$
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Fastnode.png
 - type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 180
@@ -604,6 +617,7 @@ proxy-groups:
   name: 💦 负载均衡
   filter: ^(?=.*((?i)🇭🇰|香港|港|HK|Hong|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇺🇸|美国|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|America|🇹🇼|台湾|台|新北|彰化|TW|Taiwan|🇸🇬|新加坡|坡|狮城|SG|Singapore|🇰🇷|韩国|韩|韓|首尔|KR|Korea))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|P1|P3)).*$
   tolerance: 75
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Roundrobin.png
 - type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
@@ -616,6 +630,7 @@ proxy-groups:
   include-all: true
   name: 🛖 优质节点
   filter: ^(?=.*((?i)家宽|P3)).*$
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/PLUS.png
 rule-providers:
   Custom:
     type: http
