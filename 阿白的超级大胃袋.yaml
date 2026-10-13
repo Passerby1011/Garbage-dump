@@ -208,7 +208,7 @@ proxy-groups:
   - 🛖 优质节点
   - 🤪 临时节点组
   - DIRECT
-  icon: data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnktcHMiIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+CiAgPGNsaXBQYXRoIGlkPSJhIj4KICAgIDxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjQ3Ii8+CiAgPC9jbGlwUGF0aD4KICA8Y2lyY2xlIGZpbGw9IiNmMGYwZjAiIGN4PSI2MCIgY3k9IjYwIiByPSI1MCIvPgogIDxyZWN0IGZpbGw9IiMxYzFjMWUiIGNsaXAtcGF0aD0idXJsKCNhKSIgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjMwIi8+CiAgPHJlY3QgZmlsbD0iI2YwZjBmMCIgY2xpcC1wYXRoPSJ1cmwoI2EpIiB4PSIxMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNDAiLz4KICA8cmVjdCBmaWxsPSIjZmZiMDAzIiBjbGlwLXBhdGg9InVybCgjYSkiIHg9IjEwIiB5PSI4MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIzMCIvPgo8L3N2Zz4K
+  icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Fastfish.png
 - name: 📲 电报消息
   type: select
   proxies:
@@ -349,7 +349,7 @@ proxy-groups:
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
   - DIRECT
-  icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij4KPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzAiIGZpbGw9IiNFOTFFNjMiLz4KPHBhdGggZD0iTTMyIDQ3Yy0xIDAtMS42LS41LTIuMy0xLjFMMjAgMzYuNGMtMy4xLTIuOC00LjYtNS42LTQuNi04LjkgMC00LjMgMy4zLTcuNSA3LjQtNy41IDIuMyAwIDQuNSAxLjEgNi4yIDMgMS43LTEuOSAzLjktMyA2LjItMyA0LjEgMCA3LjQgMy4yIDcuNCA3LjUgMCAzLjMtMS41IDYuMS00LjYgOC45bC05LjcgOS41Yy0uNy42LTEuMyAxLjEtMi4zIDEuMXoiIGZpbGw9IiNmZmYiLz4KPC9zdmc+
+  icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Emby.png
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -440,7 +440,7 @@ proxy-groups:
   - 🛖 优质节点
   - 🤪 临时节点组
   type: select
-- icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij4KPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzAiIGZpbGw9IiMwMDc4RDQiLz4KPHBhdGggZD0iTTQ0IDQwSDIyYy00IDAtNy4yLTMuMi03LjItNy4yIDAtMy45IDMtNyA2LjgtNy4yLjYtNC41IDQuNC04IDktOCA0LjkgMCA4LjkgMy44IDkuMyA4LjYgMy40LjcgNS45IDMuNyA1LjkgNy4yIDAgMy42LTIuNCA2LjYtNS44IDYuNnoiIGZpbGw9IiNmZmYiLz4KPHBhdGggZD0iTTMyIDQ2VjMybTAgMGwtNSA1bTUtNWw1IDUiIHN0cm9rZT0iIzAwNzhENCIgc3Ryb2tlLXdpZHRoPSIzLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsbD0ibm9uZSIvPgo8L3N2Zz4=
+- icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Bitcloud.png
   name: Ⓜ️ 微软云盘
   proxies:
   - DIRECT
