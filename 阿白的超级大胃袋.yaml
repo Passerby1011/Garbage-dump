@@ -937,14 +937,6 @@ rule-providers:
     proxy: 🚀 节点选择
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/huggingface.mrs
     path: ./rules/mrs/gs-huggingface.mrs
-  GS-jetbrains-ai:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    proxy: 🚀 节点选择
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/jetbrains-ai.mrs
-    path: ./rules/mrs/gs-jetbrains-ai.mrs
   GS-perplexity:
     type: http
     behavior: domain
@@ -953,14 +945,6 @@ rule-providers:
     proxy: 🚀 节点选择
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/perplexity.mrs
     path: ./rules/mrs/gs-perplexity.mrs
-  GS-xai:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    proxy: 🚀 节点选择
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/xai.mrs
-    path: ./rules/mrs/gs-xai.mrs
   GS-groq:
     type: http
     behavior: domain
@@ -969,22 +953,6 @@ rule-providers:
     proxy: 🚀 节点选择
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/groq.mrs
     path: ./rules/mrs/gs-groq.mrs
-  GS-poe:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    proxy: 🚀 节点选择
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/poe.mrs
-    path: ./rules/mrs/gs-poe.mrs
-  GS-cursor:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    proxy: 🚀 节点选择
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cursor.mrs
-    path: ./rules/mrs/gs-cursor.mrs
   AI-Global:
     type: http
     behavior: classical
@@ -1297,14 +1265,6 @@ rule-providers:
     proxy: 🚀 节点选择
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-communication.mrs
     path: ./rules/GS-comm.mrs
-  GS-reddit:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    proxy: 🚀 节点选择
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/reddit.mrs
-    path: ./rules/GS-reddit.mrs
   GS-entertain:
     type: http
     behavior: domain
@@ -1337,14 +1297,6 @@ rule-providers:
     proxy: 🚀 节点选择
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games-!cn.mrs
     path: ./rules/GS-gamesnocn.mrs
-  GS-aichat:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    proxy: 🚀 节点选择
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-chat-!cn.mrs
-    path: ./rules/GS-aichat.mrs
   GS-crypto:
     type: http
     behavior: domain
@@ -1399,6 +1351,9 @@ rules:
 - RULE-SET,PH-Meta,🔞 魅力艺术
 - RULE-SET,PH-Extra,🔞 魅力艺术
 - RULE-SET,PH,🔞 魅力艺术
+- DOMAIN-SUFFIX,slackb.com,🚀 节点选择
+- DOMAIN-SUFFIX,crl.microsoft.com,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,safebrowsing.googleapis.com,🚀 节点选择
 - RULE-SET,Ad-Program,🍃 应用净化
 - RULE-SET,Ad-All,🍃 应用净化
 - RULE-SET,Ad-Reject,🍃 应用净化
@@ -1414,15 +1369,12 @@ rules:
 - RULE-SET,GS-anthropic,🤖 AI
 - RULE-SET,GS-google-gemini,🤖 AI
 - RULE-SET,GS-perplexity,🤖 AI
-- RULE-SET,GS-xai,🤖 AI
 - RULE-SET,GS-groq,🤖 AI
-- RULE-SET,GS-poe,🤖 AI
-- RULE-SET,GS-cursor,🤖 AI
-- RULE-SET,GS-jetbrains-ai,🤖 AI
 - RULE-SET,GEOSITE-AI,🤖 AI
 - RULE-SET,GS-bing,Ⓜ️ 微软Bing
 - RULE-SET,GS-onedrive,Ⓜ️ 微软云盘
 - RULE-SET,GS-github,🐙 GitHub
+- RULE-SET,GS-xbox,🎮 游戏平台
 - RULE-SET,GS-microsoft-dev,Ⓜ️ 微软服务
 - RULE-SET,GS-microsoft,Ⓜ️ 微软服务
 - RULE-SET,GS-docker,🚀 节点选择
@@ -1448,17 +1400,15 @@ rules:
 - RULE-SET,GS-epicgames,🎮 游戏平台
 - RULE-SET,GS-ea,🎮 游戏平台
 - RULE-SET,GS-playstation,🎮 游戏平台
-- RULE-SET,GS-xbox,🎮 游戏平台
 - RULE-SET,GS-nintendo,🎮 游戏平台
 - RULE-SET,GS-blizzard,🎮 游戏平台
 - RULE-SET,GS-riot,🎮 游戏平台
 - RULE-SET,GS-orgs,🚀 节点选择
 - RULE-SET,GS-forums,🐦 Twitter
+- RULE-SET,GS-slack,🚀 节点选择
 - RULE-SET,GS-comm,🐦 Twitter
-- RULE-SET,GS-reddit,🐦 Twitter
 - RULE-SET,GS-emby,🎥 影音娱乐
 - RULE-SET,GS-twitch,🌍 国外媒体
-- RULE-SET,GS-aichat,🤖 AI
 - RULE-SET,GS-crypto,🏁 其他节点
 - RULE-SET,GS-container,🚀 节点选择
 - RULE-SET,GS-pwd,🚀 节点选择
@@ -1466,7 +1416,6 @@ rules:
 - RULE-SET,GS-vpn,🚀 节点选择
 - RULE-SET,GS-browser,🚀 节点选择
 - RULE-SET,GS-figma,🚀 节点选择
-- RULE-SET,GS-slack,🚀 节点选择
 - RULE-SET,GS-notion,🚀 节点选择
 - RULE-SET,GS-dropbox,🚀 节点选择
 - RULE-SET,GEOSITE-GFW,🚀 节点选择
@@ -1487,8 +1436,8 @@ rules:
 - RULE-SET,GS-paypal,🚀 节点选择
 - RULE-SET,GS-zoom,🚀 节点选择
 - RULE-SET,GS-social-nocn,🐦 Twitter
-- RULE-SET,GS-entertain,🎥 影音娱乐
 - RULE-SET,GS-gamesnocn,🎮 游戏平台
+- RULE-SET,GS-entertain,🎥 影音娱乐
 - RULE-SET,GEOSITE-GAMES,🎮 游戏平台
 - RULE-SET,GoogleCNProxyIP,🎯 全球直连
 - RULE-SET,cncidr,🎯 全球直连,no-resolve
