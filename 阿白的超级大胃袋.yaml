@@ -31,7 +31,7 @@ dns:
     - https://1.1.1.1/dns-query#🚀 节点选择
     - https://8.8.8.8/dns-query#🚀 节点选择
   nameserver:
-  - https://1.1.1.1/dns-query
+  - https://223.5.5.5/dns-query
   proxy-server-nameserver:
   - https://223.5.5.5/dns-query
   - https://doh.pub/dns-query
@@ -209,6 +209,25 @@ proxy-groups:
   - 🤪 临时节点组
   - DIRECT
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Fastfish.png
+- name: ☁️ Cloudflare
+  type: select
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🛖 优质节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点(预留)
+  - 🚀 手动切换
+  - 🏁 其他节点
+  - 🏳️‍🌈 特殊倍率节点
+  - 💦 负载均衡
+  - 🤪 临时节点组
+  - DIRECT
 - name: 📲 电报消息
   type: select
   proxies:
@@ -1376,6 +1395,9 @@ rules:
 - RULE-SET,Custom,🚀 节点选择
 - RULE-SET,OwnSG,🇸🇬 狮城节点
 - RULE-SET,Bybit,🏁 其他节点
+- DOMAIN-SUFFIX,challenges.cloudflare.com,☁️ Cloudflare
+- DOMAIN-SUFFIX,cloudflarechallenge.com,☁️ Cloudflare
+- RULE-SET,GS-cloudflare,☁️ Cloudflare
 - RULE-SET,LinuxDO,🐟 LinuxDO
 - RULE-SET,AI-Model,🤖 AI
 - RULE-SET,AI-Coding,🤖 AI
@@ -1394,7 +1416,6 @@ rules:
 - RULE-SET,GS-microsoft,Ⓜ️ 微软服务
 - RULE-SET,GS-docker,🚀 节点选择
 - RULE-SET,GS-huggingface,🚀 节点选择
-- RULE-SET,GS-cloudflare,🚀 手动切换
 - RULE-SET,GS-apple-cn,🎯 全球直连
 - RULE-SET,GS-apple,🎯 全球直连
 - RULE-SET,GS-google-cn,🎯 全球直连
