@@ -19,17 +19,43 @@ dns:
   - 119.29.29.29
   - 223.5.5.5
   nameserver-policy:
-    geosite:cn,geolocation-cn,apple:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
     +.cn:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
+    rule-set:DirectOverride:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    rule-set:GS-apple-cn:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    rule-set:GS-apple:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    rule-set:GS-google-cn:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    rule-set:GEOSITE-CN:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    rule-set:GEOSITE-CN-EX:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    rule-set:CN-Extra:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    rule-set:Download:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    rule-set:LAN:
+    - system
     geosite:private:
     - system
     geosite:geolocation-!cn:
     - https://1.1.1.1/dns-query#🚀 节点选择
     - https://8.8.8.8/dns-query#🚀 节点选择
+    geosite:cn,geolocation-cn,apple:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   nameserver:
   - https://1.1.1.1/dns-query#🚀 节点选择
   - https://8.8.8.8/dns-query#🚀 节点选择
@@ -1294,6 +1320,14 @@ rule-providers:
     proxy: 🚀 节点选择
     url: https://raw.githubusercontent.com/Passerby1011/Garbage-dump/main/rules/ph-extra.list
     path: ./rules/PH-extra.list
+  CN-Extra:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    url: https://raw.githubusercontent.com/Passerby1011/Garbage-dump/main/rules/cn-extra.list
+    path: ./rules/cn-extra.list
+    proxy: 🚀 节点选择
 rules:
 - RULE-SET,DirectOverride,🎯 全球直连
 - RULE-SET,LAN,🎯 全球直连
@@ -1373,6 +1407,7 @@ rules:
 - DOMAIN-SUFFIX,cn,🎯 全球直连
 - RULE-SET,GEOSITE-CN,🎯 全球直连
 - RULE-SET,GEOSITE-CN-EX,🎯 全球直连
+- RULE-SET,CN-Extra,🎯 全球直连
 - RULE-SET,Download,🎯 全球直连
 - RULE-SET,GS-dev,🚀 节点选择
 - RULE-SET,GS-remote,🚀 节点选择
