@@ -31,14 +31,11 @@ dns:
     - https://1.1.1.1/dns-query#🚀 节点选择
     - https://8.8.8.8/dns-query#🚀 节点选择
   nameserver:
-  - https://223.5.5.5/dns-query
+  - https://1.1.1.1/dns-query#🚀 节点选择
+  - https://8.8.8.8/dns-query#🚀 节点选择
   proxy-server-nameserver:
   - https://223.5.5.5/dns-query
   - https://doh.pub/dns-query
-  direct-nameserver:
-  - https://doh.pub/dns-query
-  - https://dns.alidns.com/dns-query
-  direct-nameserver-follow-policy: true
   fake-ip-filter:
   - geosite:private
   - geosite:category-ntp
@@ -1393,7 +1390,7 @@ rules:
 - RULE-SET,GS-gamesnocn,🎮 游戏平台
 - RULE-SET,GS-entertain,🎥 影音娱乐
 - RULE-SET,GEOSITE-GAMES,🎮 游戏平台
-- RULE-SET,GoogleCNProxyIP,🎯 全球直连
+- RULE-SET,GoogleCNProxyIP,🎯 全球直连,no-resolve
 - RULE-SET,cncidr,🎯 全球直连,no-resolve
-- GEOIP,CN,🎯 全球直连
+- GEOIP,CN,🎯 全球直连,no-resolve
 - MATCH,🐟 漏网之鱼
