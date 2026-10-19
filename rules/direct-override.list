@@ -17,3 +17,41 @@ DOMAIN-KEYWORD,tailscale
 # 个人
 DOMAIN-SUFFIX,greenrecipebook.com
 DOMAIN-SUFFIX,wangmai.cn
+
+# ---- Azure 中国 CDN / 21Vianet（微软中国内容分发，直连更快）----
+# 来源：geosite:microsoft 中的 azchcdn*/21v*/中国 CDN 域
+# 说明：azchcdn[a-z].com 为 CDN 分片命名模式，一并列出以覆盖后续新增分片
+DOMAIN-SUFFIX,azchcdna.com
+DOMAIN-SUFFIX,azchcdnb.com
+DOMAIN-SUFFIX,azchcdnc.com
+DOMAIN-SUFFIX,azchcdnd.com
+DOMAIN-SUFFIX,azchcdne.com
+DOMAIN-SUFFIX,azchcdnf.com
+DOMAIN-SUFFIX,azchcdng.com
+DOMAIN-SUFFIX,azchcdnh.com
+DOMAIN-SUFFIX,azchcdni.com
+DOMAIN-SUFFIX,azchcdnj.com
+DOMAIN-SUFFIX,azchcdnk.com
+DOMAIN-SUFFIX,azchcdnl.com
+DOMAIN-SUFFIX,azchcdnm.com
+DOMAIN-SUFFIX,azchcdnn.com
+DOMAIN-SUFFIX,azchcdno.com
+DOMAIN-SUFFIX,azchcdnp.com
+DOMAIN-SUFFIX,azchcdnq.com
+DOMAIN-SUFFIX,azchcdnr.com
+DOMAIN-SUFFIX,azchcdns.com
+DOMAIN-SUFFIX,azchcdnt.com
+DOMAIN-SUFFIX,azchcdnu.com
+DOMAIN-SUFFIX,azchcdnv.com
+DOMAIN-SUFFIX,azchcdnw.com
+DOMAIN-SUFFIX,azchcdnx.com
+DOMAIN-SUFFIX,azchcdny.com
+DOMAIN-SUFFIX,azchcdnz.com
+DOMAIN-SUFFIX,21vbc.com
+DOMAIN-SUFFIX,21vbluecloud.com
+DOMAIN-SUFFIX,21vbluecloud.net
+DOMAIN-SUFFIX,aggresmart.com
+DOMAIN-SUFFIX,blueaggrestore.com
+DOMAIN-SUFFIX,bluecloudprod.com
+DOMAIN-SUFFIX,mcchcdn.com
+DOMAIN-SUFFIX,mschcdn.com
