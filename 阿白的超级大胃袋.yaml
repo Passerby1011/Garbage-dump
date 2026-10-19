@@ -149,7 +149,6 @@ proxy-groups:
   - 🏁 其他节点
   - 🛖 优质节点
   - 🏳️‍🌈 特殊倍率节点
-  - 🤪 临时节点组
   - 💦 负载均衡
   - DIRECT
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Static.png
@@ -174,19 +173,6 @@ proxy-groups:
   name: ♻️ 自动选择
   filter: ^(?=.*((?i)🇭🇰|香港|港|HK|Hong|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇺🇸|美国|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|America|🇹🇼|台湾|台|新北|彰化|TW|Taiwan|🇸🇬|新加坡|坡|狮城|SG|Singapore|🇰🇷|韩国|韩|韓|首尔|KR|Korea))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|风萧萧兮|家宽|P1|P3)).*$
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Urltest.png
-- disable-udp: false
-  filter: ^(?=.*((?i)P1|临时))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P2|P3)).*$
-  hidden: false
-  include-all: true
-  interval: 180
-  lazy: true
-  max-failed-times: 3
-  name: 🤪 临时节点组
-  timeout: 6000
-  tolerance: 50
-  type: url-test
-  url: http://www.gstatic.com/generate_204
-  icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Auto.png
 - type: select
   url: http://www.gstatic.com/generate_204
   disable-udp: false
@@ -206,7 +192,6 @@ proxy-groups:
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
   - 🛖 优质节点
-  - 🤪 临时节点组
   - DIRECT
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Fastfish.png
 - name: ☁️ Cloudflare
@@ -226,7 +211,6 @@ proxy-groups:
   - 🏁 其他节点
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
-  - 🤪 临时节点组
   - DIRECT
 - name: 📲 电报消息
   type: select
@@ -244,7 +228,6 @@ proxy-groups:
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
   - 🛖 优质节点
-  - 🤪 临时节点组
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Telegram.png
 - name: 🤖 AI
   type: select
@@ -263,7 +246,6 @@ proxy-groups:
   - 🏁 其他节点
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
-  - 🤪 临时节点组
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/OpenAI.png
 - name: 🐙 GitHub
   type: select
@@ -281,7 +263,6 @@ proxy-groups:
   - 🏁 其他节点
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
-  - 🤪 临时节点组
   - DIRECT
   icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/github.svg
 - name: 📹 油管视频
@@ -300,7 +281,6 @@ proxy-groups:
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
   - 🛖 优质节点
-  - 🤪 临时节点组
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/YouTube.png
 - type: select
   url: http://www.gstatic.com/generate_204
@@ -323,7 +303,6 @@ proxy-groups:
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
   - 🛖 优质节点
-  - 🤪 临时节点组
   - DIRECT
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Netflix.png
 - type: select
@@ -350,7 +329,6 @@ proxy-groups:
   - 🇨🇳 台湾节点
   - 🇭🇰 香港节点
   - 🚀 节点选择
-  - 🤪 临时节点组
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Bili.png
 - name: 🔞 魅力艺术
   type: select
@@ -358,7 +336,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🚀 手动切换
   - ♻️ 自动选择
-  - 🤪 临时节点组
   - 🇭🇰 香港节点
   - 🇨🇳 台湾节点
   - 🇸🇬 狮城节点
@@ -384,7 +361,6 @@ proxy-groups:
   - 🏁 其他节点
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
-  - 🤪 临时节点组
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Streaming.png
 - name: 🐦 Twitter
   type: select
@@ -401,7 +377,6 @@ proxy-groups:
   - 🚀 手动切换
   - 🏁 其他节点
   - 🏳️‍🌈 特殊倍率节点
-  - 🤪 临时节点组
   - 💦 负载均衡
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Twitter.png
 - name: 🎶 Tiktok
@@ -419,7 +394,6 @@ proxy-groups:
   - 🚀 手动切换
   - 🏁 其他节点
   - 🏳️‍🌈 特殊倍率节点
-  - 🤪 临时节点组
   - 💦 负载均衡
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/TikTok.png
 - name: 🎮 游戏平台
@@ -438,7 +412,6 @@ proxy-groups:
   - 🏁 其他节点
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
-  - 🤪 临时节点组
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Steam.png
 - icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Bing.png
   name: Ⓜ️ 微软Bing
@@ -457,7 +430,6 @@ proxy-groups:
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
   - 🛖 优质节点
-  - 🤪 临时节点组
   type: select
 - icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Bitcloud.png
   name: Ⓜ️ 微软云盘
@@ -476,7 +448,6 @@ proxy-groups:
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
   - 🛖 优质节点
-  - 🤪 临时节点组
   type: select
 - name: Ⓜ️ 微软服务
   type: select
@@ -495,7 +466,6 @@ proxy-groups:
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
   - 🛖 优质节点
-  - 🤪 临时节点组
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Microsoft.png
 - name: 🎯 全球直连
   type: select
@@ -527,7 +497,6 @@ proxy-groups:
   - 🏳️‍🌈 特殊倍率节点
   - 💦 负载均衡
   - 🛖 优质节点
-  - 🤪 临时节点组
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Final.png
 - type: url-test
   url: http://www.gstatic.com/generate_204
