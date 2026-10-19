@@ -52,6 +52,16 @@ dns:
   - '*.msftncsi.com'
   - www.msftconnecttest.com
   - +.push.apple.com
+  - +.stun.*.*
+  - +.stun.*.*.*
+  - +.stun.*.*.*.*
+  - +.srv.nintendo.net
+  - '*.n.n.srv.nintendo.net'
+  - +.stun.playstation.net
+  - xbox.*.*.microsoft.com
+  - +.xboxlive.com
+  - geosite:connectivity-check
+  - xbox.*.microsoft.com
 sniffer:
   enable: true
   sniff:
@@ -59,7 +69,7 @@ sniffer:
       ports:
       - 80
       - 8080-8880
-      override-destination: true
+      override-destination: false
     TLS:
       ports:
       - 443
@@ -83,6 +93,7 @@ tun:
   - tcp://any:53
   strict-route: true
   mtu: 1500
+  disable-icmp-forwarding: true
 FilterTWHK: ^(?=.*((?i)🇭🇰|香港|港|HK|Hong|🇹🇼|台湾|台|新北|彰化|TW|Taiwan))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
 FilterTemp: ^(?=.*((?i)P1|临时))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P2|P3)).*$
 FilterHK: ^(?=.*((?i)🇭🇰|香港|港|HK|Hong))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
