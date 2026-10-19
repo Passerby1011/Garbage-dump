@@ -265,23 +265,6 @@ proxy-groups:
   - 💦 负载均衡
   - DIRECT
   icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/github.svg
-- name: 📹 油管视频
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点(预留)
-  - 🚀 手动切换
-  - 🏁 其他节点
-  - 🏳️‍🌈 特殊倍率节点
-  - 💦 负载均衡
-  - 🛖 优质节点
-  icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/YouTube.png
 - type: select
   url: http://www.gstatic.com/generate_204
   disable-udp: false
@@ -305,18 +288,6 @@ proxy-groups:
   - 🛖 优质节点
   - DIRECT
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Netflix.png
-- type: select
-  url: http://www.gstatic.com/generate_204
-  disable-udp: false
-  hidden: false
-  include-all: true
-  name: 📺 巴哈姆特
-  filter: ^(?=.*((?i)🇹🇼|台湾|台|新北|彰化|TW|Taiwan))(?!.*((?i)回国|校园|游戏|🎮|教育|久虚|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|家宽|P1|P3)).*$
-  proxies:
-  - 🇨🇳 台湾节点
-  - 🚀 节点选择
-  - DIRECT
-  icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Bahamut.png
 - type: select
   url: http://www.gstatic.com/generate_204
   disable-udp: false
@@ -346,39 +317,6 @@ proxy-groups:
   - 💦 负载均衡
   - DIRECT
   icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Emby.png
-- name: 🌍 国外媒体
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点(预留)
-  - 🚀 手动切换
-  - 🏁 其他节点
-  - 🏳️‍🌈 特殊倍率节点
-  - 💦 负载均衡
-  icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Streaming.png
-- name: 🐦 Twitter
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🛖 优质节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点(预留)
-  - 🚀 手动切换
-  - 🏁 其他节点
-  - 🏳️‍🌈 特殊倍率节点
-  - 💦 负载均衡
-  icon: https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Twitter.png
 - name: 🎶 Tiktok
   type: select
   proxies:
@@ -1390,17 +1328,17 @@ rules:
 - RULE-SET,GS-google-cn,🎯 全球直连
 - RULE-SET,GS-telegram,📲 电报消息
 - RULE-SET,cncidr-telegram,📲 电报消息,no-resolve
-- RULE-SET,GS-twitter,🐦 Twitter
-- RULE-SET,GS-discord,🐦 Twitter
-- RULE-SET,GS-spotify,🌍 国外媒体
+- RULE-SET,GS-twitter,🚀 节点选择
+- RULE-SET,GS-discord,🚀 节点选择
+- RULE-SET,GS-spotify,🚀 节点选择
 - RULE-SET,GS-tiktok,🎶 Tiktok
-- RULE-SET,GS-youtube,📹 油管视频
+- RULE-SET,GS-youtube,🚀 节点选择
 - RULE-SET,GS-disney,🎥 影音娱乐
 - RULE-SET,OwnMedia,🎥 影音娱乐
 - RULE-SET,GEOSITE-MEDIA,🎥 影音娱乐
 - RULE-SET,GEOSITE-NETFILM,🎥 影音娱乐
 - RULE-SET,BilibiliHMT,📺 哔哩哔哩
-- RULE-SET,Bahamut,📺 巴哈姆特
+- RULE-SET,Bahamut,🇨🇳 台湾节点
 - RULE-SET,GS-steam,🎮 游戏平台
 - RULE-SET,GS-epicgames,🎮 游戏平台
 - RULE-SET,GS-ea,🎮 游戏平台
@@ -1409,11 +1347,11 @@ rules:
 - RULE-SET,GS-blizzard,🎮 游戏平台
 - RULE-SET,GS-riot,🎮 游戏平台
 - RULE-SET,GS-orgs,🚀 节点选择
-- RULE-SET,GS-forums,🐦 Twitter
+- RULE-SET,GS-forums,🚀 节点选择
 - RULE-SET,GS-slack,🚀 节点选择
-- RULE-SET,GS-comm,🐦 Twitter
+- RULE-SET,GS-comm,🚀 节点选择
 - RULE-SET,GS-emby,🎥 影音娱乐
-- RULE-SET,GS-twitch,🌍 国外媒体
+- RULE-SET,GS-twitch,🚀 节点选择
 - RULE-SET,GS-crypto,🏁 其他节点
 - RULE-SET,GS-container,🚀 节点选择
 - RULE-SET,GS-pwd,🚀 节点选择
@@ -1440,7 +1378,7 @@ rules:
 - RULE-SET,GS-adobe,🚀 节点选择
 - RULE-SET,GS-paypal,🚀 节点选择
 - RULE-SET,GS-zoom,🚀 节点选择
-- RULE-SET,GS-social-nocn,🐦 Twitter
+- RULE-SET,GS-social-nocn,🚀 节点选择
 - RULE-SET,GS-gamesnocn,🎮 游戏平台
 - RULE-SET,GS-entertain,🎥 影音娱乐
 - RULE-SET,GEOSITE-GAMES,🎮 游戏平台
